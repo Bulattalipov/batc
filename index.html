@@ -20,27 +20,206 @@
 
       <header class="header">
         <div class="site-container">
-          <a href="/">
-            <img src="assets/images/logo.svg" alt="Logo">
-          </a>
-          <button class="button" data-path="modal">Открыть модалку</button>
+          <div class="header__inner">
+            <a class="header__logo" href="/">
+              <img class="header__logo-img" src="assets/images/logo.svg" alt="Logo">
+            </a>
+            <nav class="nav header__nav">
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a class="nav__list-link" href="#">Что это</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="nav__list-link" href="#">Задачи</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="nav__list-link" href="#">Преимущества</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="nav__list-link" href="#">Тарифы</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__btn"><span></span><span></span><span></span>
+            </button>
+          </div>
         </div>
       </header>
+      <div class="main-menu">
+        <div class="site-container">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#">Что это</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#">Задачи</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#">Преимущества</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#">Тарифы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
       <main class="page-main main">
-        <section class="intro">
+        <section class="intro" style="background-image: url('assets/images/intro/bg-img.jpg')">
           <div class="site-container">
-            <picture>
-              <source type="image/webp" srcset="assets/images/test/test-image.webp" alt="test">
-              <img src="assets/images/test/test-image.jpg" alt="test">
-            </picture>
+            <div class="intro__inner">
+              <h1 class="intro__title">Виртуальная АТС<br>для повышения продаж и управления звонками</h1>
+              <p class="intro__desc">Современное решение для организации телефонной связи в бизнесе</p>
+              <div class="intro__btns">
+                <button class="intro__btn button" data-path="modal">Отправить заявку</button>
+                <a class="intro__btn button button--white" href="#">Подключить самому</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="description">
+          <div class="site-container">
+            <div class="description__inner">
+              <h2 class="description__title title">Что такое Виртуальная АТС</h2>
+              <p class="description__desc">Виртуальная АТС (Автоматическая Телефонная Система) - облачная телефонная связь через интернет и полноценная замена физической офисной мини-АТС. Она помогает лучше управлять телефонными звонками в бизнесе: есть голосовое меню, звонки идут в очереди, можно записывать разговоры и другие функции.</p>
+            </div>
+          </div>
+        </section>
+        <section class="solutions">
+          <div class="solutions__elements">
+            <img class="solutions__element" src="assets/images/solutions/elem-1.svg" alt="">
+            <img class="solutions__element" src="assets/images/solutions/elem-2.svg" alt="">
+            <img class="solutions__element" src="assets/images/solutions/elem-3.svg" alt="">
+            <img class="solutions__element" src="assets/images/solutions/elem-4.svg" alt="">
+          </div>
+          <div class="site-container">
+            <div class="solutions__inner">
+              <h2 class="solutions__title title">Какие задачи решает Виртуальная АТС</h2>
+              <ul class="solutions__list">
+                <li class="solutions__list-item">
+                  <h3 class="solutions__list-item-title">Оптимизация управления бизнесом</h3>
+                  <p class="solutions__list-item-desc">Анализируйте данные и отчеты, предоставляемые Виртуальной АТС. Это поможет управлять бизнесом эффективнее.</p>
+                  <img class="solutions__list-item-icon" src="assets/images/solutions/icon-1.svg" alt="alt">
+                </li>
+                <li class="solutions__list-item">
+                  <h3 class="solutions__list-item-title">Расширение географии бизнеса</h3>
+                  <p class="solutions__list-item-desc">Расширяйте географический охват, обслуживая клиентов в других городах и странах без необходимости физического нахождения в них.</p>
+                  <img class="solutions__list-item-icon" src="assets/images/solutions/icon-2.svg" alt="alt">
+                </li>
+                <li class="solutions__list-item">
+                  <h3 class="solutions__list-item-title">Сокращение расходов</h3>
+                  <p class="solutions__list-item-desc">Сокращайте расходы на телефонную связь, так как виртуальная АТС позволяет использовать Интернет для передачи голосовой информации.</p>
+                  <img class="solutions__list-item-icon" src="assets/images/solutions/icon-3.svg" alt="alt">
+                </li>
+                <li class="solutions__list-item">
+                  <h3 class="solutions__list-item-title">Новые возможности для коммуникаций</h3>
+                  <p class="solutions__list-item-desc">Расширяйте ассортимент коммуникационных каналов, включая виджеты обратного звонка на сайте.</p>
+                  <img class="solutions__list-item-icon" src="assets/images/solutions/icon-4.svg" alt="alt">
+                </li>
+                <li class="solutions__list-item">
+                  <h3 class="solutions__list-item-title">Оптимизация рабочего процесса</h3>
+                  <p class="solutions__list-item-desc">Благодаря автоматизации входящих и исходящих звонков, сотрудники могут сосредоточиться на выполнении своих задач без перебоев связи и лишней бумажной волокиты.</p>
+                  <img class="solutions__list-item-icon" src="assets/images/solutions/icon-5.svg" alt="alt">
+                </li>
+                <li class="solutions__list-item">
+                  <h3 class="solutions__list-item-title">Повышение мобильности</h3>
+                  <p class="solutions__list-item-desc">Сотрудники могут работать удаленно, что улучшает мобильность и гибкость бизнеса.</p>
+                  <img class="solutions__list-item-icon" src="assets/images/solutions/icon-6.svg" alt="alt">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+          <div class="site-container">
+            <div class="questions__inner"></div>
           </div>
         </section>
       </main>
 
       <footer class="footer">
         <div class="site-container">
-          <h1>footer</h1>
+          <ul class="footer__columns">
+            <li class="footer__column">
+              <div class="footer__column-title">Летай</div>
+              <ul class="footer__column-list">
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">О компании</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Пресс-центр</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Работа в компани</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Акционерам и инвесторам</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Структурные подразделения</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Контактная информация</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__column">
+              <div class="footer__column-title">Частным клиентам</div>
+              <ul class="footer__column-list">
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Мобильная связь</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Интернет</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Телевидение</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Телефония</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Домофония</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Телеграф</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__column">
+              <div class="footer__column-title">Бизнесу</div>
+              <ul class="footer__column-list">
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Решения для бизнеса</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Мобильная связь</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Интернет в офис</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Телефония</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__column">
+              <div class="footer__column-title">Партнерам</div>
+              <ul class="footer__column-list">
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Поставщикам</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Операторам связи</a>
+                </li>
+                <li class="footer__column-list-item">
+                  <a class="footer__column-list-link" href="#">Дилерам</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </footer>
     </div>
