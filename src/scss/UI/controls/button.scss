@@ -1,6 +1,43 @@
 .button {
-  padding: 1rem 2rem;
+  padding: 2.9rem 8.1rem;
   color: var(--color-white);
-  background-color: blue;
+  font-weight: 500;
+  font-size: 3.5rem;
+  text-align: center;
+  background-color: var(--color-orange);
   border-radius: 2rem;
+  transition: background-color var(--transition), color var(--transition);
+
+  &:hover {
+    background-color: #FFB990;
+  }
+
+  @include mq(md) {
+    padding: 2rem 6.4rem;
+    font-size: 2.7rem;
+  }
+
+  @include mq(sm) {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+
+  @include mq(xs) {
+    width: 100%;
+  }
+
+  @include mq(xxs) {
+    padding: 2rem;
+  }
+
+  &--white {
+    color: var(--color-dark);
+    background-color: var(--color-white);
+
+    &:hover {
+      color: var(--color-white);
+      background-color: #2B2B2B;
+    }
+  }
 }

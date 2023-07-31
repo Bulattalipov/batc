@@ -1,3 +1,8 @@
-section.intro
+section.intro(style="background-image: url('assets/images/intro/bg-img.jpg')")
   .site-container
-    +picture('test/test-image.jpg', 'test')
+    .intro__inner
+      h1.intro__title Виртуальная АТС <br> для повышения продаж и управления звонками
+      p.intro__desc Современное решение для организации телефонной связи в бизнесе
+      .intro__btns
+        button.intro__btn.button(data-path="modal-error") Отправить заявку
+        a.intro__btn.button.button--white(href="#") Подключить самому

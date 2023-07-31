@@ -1,0 +1,25 @@
+-
+  solutionsList = [
+    {title: "Оптимизация управления бизнесом", desc: "Анализируйте данные и отчеты, предоставляемые Виртуальной АТС. Это поможет управлять бизнесом эффективнее.", imgUrl: "icon-1"},
+    {title: "Расширение географии бизнеса", desc: "Расширяйте географический охват, обслуживая клиентов в других городах и странах без необходимости физического нахождения в них.", imgUrl: "icon-2"},
+    {title: "Сокращение расходов", desc: "Сокращайте расходы на телефонную связь, так как виртуальная АТС позволяет использовать Интернет для передачи голосовой информации.", imgUrl: "icon-3"},
+    {title: "Новые возможности для коммуникаций", desc: "Расширяйте ассортимент коммуникационных каналов, включая виджеты обратного звонка на сайте.", imgUrl: "icon-4"},
+    {title: "Оптимизация рабочего процесса", desc: "Благодаря автоматизации входящих и исходящих звонков, сотрудники могут сосредоточиться на выполнении своих задач без перебоев связи и лишней бумажной волокиты.", imgUrl: "icon-5"},
+    {title: "Повышение мобильности", desc: "Сотрудники могут работать удаленно, что улучшает мобильность и гибкость бизнеса.", imgUrl: "icon-6"},
+  ]
+
+section.solutions
+  .solutions__elements
+    img.solutions__element(src="assets/images/solutions/elem-1.svg" alt="")
+    img.solutions__element(src="assets/images/solutions/elem-2.svg" alt="")
+    img.solutions__element(src="assets/images/solutions/elem-3.svg" alt="")
+    img.solutions__element(src="assets/images/solutions/elem-4.svg" alt="")
+  .site-container
+    .solutions__inner
+      h2.solutions__title.title Какие задачи решает Виртуальная АТС
+      ul.solutions__list
+        each item in solutionsList
+          li.solutions__list-item
+            h3.solutions__list-item-title= item.title
+            p.solutions__list-item-desc= item.desc
+            img.solutions__list-item-icon(src=`assets/images/solutions/${item.imgUrl}.svg` alt="alt")

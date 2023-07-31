@@ -1,0 +1,68 @@
+.brands {
+  padding: 6.4rem 0 13rem;
+
+  @include mq(md) {
+    padding: 7rem 0;
+  }
+
+  @include mq(sm) {
+    padding: 2.3rem 0 4.5rem;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 8.8rem;
+    text-align: center;
+
+    @include mq(md) {
+      margin-bottom: 5.6rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq(md) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+    }
+
+    @include mq(xs) {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: center;
+    margin-right: 5.6rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include mq(md) {
+      margin-right: 0;
+    }
+  }
+
+  &__list-item-img {
+    width: 30.4rem;
+    object-fit: cover;
+
+    @include mq(xs) {
+      width: auto;
+      height: 3.5rem;
+    }
+  }
+}

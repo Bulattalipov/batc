@@ -1,0 +1,184 @@
+.solutions {
+  position: relative;
+  padding: 4.6rem 0 6.7rem;
+  overflow: hidden;
+  background-color: var(--color-orange);
+
+  &__element {
+    position: absolute;
+    z-index: 0;
+
+    @include mq(md) {
+      width: 60rem;
+    }
+
+    &:nth-child(1) {
+      left: -23rem;
+
+      @include mq(md) {
+        top: 14rem;
+      }
+    }
+
+    &:nth-child(2) {
+      top: -12rem;
+      right: -26rem;
+
+      @include mq(md) {
+        top: 0;
+      }
+
+      @include mq(custom, max, 410) {
+        top: 3rem;
+        right: -20rem;
+      }
+    }
+
+    &:nth-child(3) {
+      bottom: -5rem;
+      left: -23rem;
+
+      @include mq(md) {
+        bottom: 4rem;
+      }
+
+      @include mq(sm) {
+        bottom: -25rem;
+      }
+    }
+
+    &:nth-child(4) {
+      right: -13rem;
+      bottom: -3rem;
+
+      @include mq(md) {
+        bottom: 4rem;
+      }
+
+      @include mq(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    margin-bottom: 4.8rem;
+    color: var(--color-white);
+
+    @include mq(md) {
+      text-align: center;
+    }
+
+    @include mq(xs) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 2rem;
+
+    @include mq(custom, max, 1024) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    @include mq(md) {
+      text-align: center;
+    }
+
+    @include mq(sm) {
+      gap: 1rem;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.3rem 2.2rem 0 rgba(0, 0, 0, 0.49);
+    background-color: var(--color-white);
+
+    @include mq(sm) {
+      padding: 3.2rem 1.2rem;
+    }
+  }
+
+  &__list-item-title {
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 4rem;
+
+    @include mq(custom, max, 1278) {
+      font-size: 3.4rem;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+
+    @include mq(xs) {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    @include mq(custom, max, 410) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__list-item-desc {
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 3rem;
+
+    @include mq(custom, max, 1278) {
+      font-size: 2.7rem;
+    }
+
+    @include mq(md) {
+      font-size: 2.5rem;
+    }
+
+    @include mq(sm) {
+      font-size: 2rem;
+    }
+
+    @include mq(xs) {
+      font-size: 1.4rem;
+    }
+
+    @include mq(custom, max, 410) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__list-item-icon {
+    align-self: flex-end;
+    width: 9rem;
+    height: 9rem;
+    margin-top: auto;
+
+    @include mq(md) {
+      align-self: center;
+    }
+
+    @include mq(sm) {
+      width: 6.3rem;
+      height: 6.3rem;
+    }
+
+    @include mq(custom, max, 410) {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}

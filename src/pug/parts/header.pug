@@ -1,6 +1,19 @@
 header.header
   .site-container
-    a(href="/")
-      img(src="assets/images/logo.svg" alt="Logo")
-    button.button(data-path="modal")
-      | Открыть модалку
+    .header__inner
+      a.header__logo(href="/")
+        img.header__logo-img(src="assets/images/logo.svg" alt="Logo")
+      nav.nav.header__nav
+        ul.nav__list
+          li.nav__list-item
+            a.nav__list-link(href="#") Что это
+          li.nav__list-item
+            a.nav__list-link(href="#") Задачи
+          li.nav__list-item
+            a.nav__list-link(href="#") Преимущества
+          li.nav__list-item
+            a.nav__list-link(href="#") Тарифы
+      button.header__btn
+        span
+        span
+        span

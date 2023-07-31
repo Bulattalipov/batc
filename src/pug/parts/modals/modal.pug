@@ -1,7 +1,46 @@
-.modal__container(data-target="modal")
+.modal__container.modal--tariffs(data-target="modal-tariff")
   .modal__content
     button.button-reset.modal__close-btn.modal-close(type="button")
       span
       span
     .modal__legend
-      | Поздравляем вы открыли модалку!
+      | ВАТС 6
+    .modal__price
+      | 990 ₽
+    ul.modal__list
+      each i in Array.from(Array(12).keys())
+        li.modal__list-item
+          img.modal__list-item-img(src="assets/images/modal/icon-1.svg" alt="")
+          .modal__list-item-text Перехват, перевод вызовов dfwe fwefwefwe
+    button.modal__button.button Попробовать
+.modal__container.modal--application(data-target="modal-application")
+  .modal__content
+    button.button-reset.modal__close-btn.modal-close(type="button")
+      span
+      span
+    .modal__title
+      | Оставьте заявку
+    form.modal__form.form(action="" data-need-validation)
+        .input.js-validation-wrapper
+          input.input__control(type="text" placeholder="Как к Вам обращаться?" required)
+        .input.js-validation-wrapper
+          input.input__control(type="text" class="js-phone-mask" placeholder="+7(___)___-__-__" required)
+        .cheackbox
+          input(type="checkbox" class="visually-hidden" id="checkbox-2" required)
+          label(for="checkbox-2" class="checkbox__container")
+            span.checkbox__control Отправляя заявку, я соглашаюсь на обработку персональных данных
+        button.form__button.button(type="submit") Отправить заявку
+.modal__container.modal--success(data-target="modal-success")
+  .modal__content
+    button.button-reset.modal__close-btn.modal-close(type="button")
+      span
+      span
+    .modal__title
+      | Ваша заявка успешно отправлена! <br> Мы перезвоним Вам в течение получаса
+.modal__container.modal--error(data-target="modal-error")
+  .modal__content
+    button.button-reset.modal__close-btn.modal-close(type="button")
+      span
+      span
+    .modal__title
+      | Ваша заявка успешно отправлена! <br> Мы перезвоним Вам в течение получаса

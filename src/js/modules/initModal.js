@@ -1,12 +1,12 @@
-import { Modal } from "./Modal";
+import {
+  Modal
+} from "./Modal";
 
 export default () => {
   const modal = new Modal({
-    isOpen: (modal) => {
-    },
-    isClose: (modal) => {
-    },
+    isOpen: (modal) => {},
+    isClose: (modal) => {},
   });
 
-  // window.medikamarket_API.modal = modal;
+  window.batc_API.modal = modal;
 };

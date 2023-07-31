@@ -1,0 +1,24 @@
+-
+  questionsList = [
+    "В чем отличие ВАТС от обычной телефонии?",
+    "Как быстро подключается услуга?",
+    "Сколько хранятся записи разговоров?",
+    "Могут ли несколько сотрудников работать под одним номером?",
+    "Как настроить Виртуальную АТС?"
+  ]
+
+section.questions
+  .site-container
+    h2.questions__title.title Часто задаваемые вопросы
+    ul.questions__list.js-accordions
+      each item in questionsList
+        li.questions__list-item.js-accordion
+          .questions__list-item-title-wrapper.js-accordion-btn
+            .questions__list-item-title= item
+            .questions__list-item-cross
+          .questions__list-item-content-wrapper.js-accordion-content
+            .questions__list-item-content
+              p
+                | Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices.
+
+

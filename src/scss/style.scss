@@ -1,23 +1,39 @@
 /* stylelint-disable no-invalid-position-at-import-rule */
 :root {
   /* typography  */
-  --main-ff: "Roboto", sans-serif;
-  --second-ff: "Roboto", sans-serif;
+  --main-ff: "PTRootUI", sans-serif;
 
   /* colors */
-  --color-dark: #333;
+  --color-dark: #2B2B2B;
   --color-bg: #fafcfe;
   --color-white: #fff;
+  --color-orange: #FE5000;
   --color-grey-600: #99a5b0;
   --color-grey-300: #eff1f5;
   --font-body: 400 1.6rem/1.2 var(--main-ff);
 
   /* etc */
   --transition: 200ms ease-in;
+  --padding-offset: 53px;
 }
 
+@import "./blocks/**/*";
 @import "./helpers/**/*";
 @import "./vendor/**/*";
 @import "./settings/**/*";
 @import "./UI/**/*";
 @import "./pages/**/*";
+
+
+@include mq(lg) {
+  :root {
+    --padding-offset: 30px;
+  }
+}
+
+
+@include mq(xs) {
+  :root {
+    --padding-offset: 20px;
+  }
+}

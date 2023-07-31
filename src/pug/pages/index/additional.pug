@@ -1,0 +1,24 @@
+-
+  additionalList = [
+    {title: "Дополнительный сотрудник", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur expedita quibusdam"},
+    {title: "Запись звонков на 12 месяцев", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur expedita quibusdam Lorem, ipsum dolor sit "},
+    {title: "Запись звонков на 3 месяца", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur expedita quibusdam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur expedita quibusdam"},
+    {title: "Интеграция с CRM", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur expedita quibusdam Lorem, ipsum dolor sit amet consectetur adipisicing elit."},
+    {title: "Доступ к статистике", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur expedita quibusdam Lorem, ipsum dolor sit"},
+    {title: "Эффективные продажи", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur expedita quibusdam"},
+    {title: "itoolabs max", desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur expedita quibusdam"},
+  ]
+section.additional
+  .site-container
+    h2.additional__title.title Дополнительные услуги
+    ul.additional__list
+      each item in additionalList
+        li.additional__list-item
+          h2.additional__list-item-title= item.title
+          p.additional__list-item-desc= item.desc
+          .additional__list-item-box
+            .additional__list-item-price #[b от] 420₽
+            .additional__list-item-date в месяц
+
+
+

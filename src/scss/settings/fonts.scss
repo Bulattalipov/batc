@@ -1,12 +1,51 @@
 @font-face {
-  font-weight: 400;
-  font-family: Roboto;
+  font-weight: 300;
+  font-family: PTRootUI;
   font-style: normal;
   font-display: swap;
   src:
-    local("Roboto"),
-    local("Roboto-Bold"),
-    local("Roboto-Bold"),
-    url("../fonts/roboto-regular.woff2") format("woff2"),
-    url("../fonts/roboto-regular.woff") format("woff");
+    local("PTRootUI"),
+    local("PTRootUI-Light"),
+    local("PTRootUI-Light"),
+    url("../fonts/PTRootUI-Light.woff2") format("woff2"),
+    url("../fonts/PTRootUI-Light.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: PTRootUI;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("PTRootUI"),
+    local("PTRootUI-Regular"),
+    local("PTRootUI-Regular"),
+    url("../fonts/PTRootUI-Regular.woff2") format("woff2"),
+    url("../fonts/PTRootUI-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: PTRootUI;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("PTRootUI"),
+    local("PTRootUI-Medium"),
+    local("PTRootUI-Medium"),
+    url("../fonts/PTRootUI-Medium.woff2") format("woff2"),
+    url("../fonts/PTRootUI-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: PTRootUI;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("PTRootUI"),
+    local("PTRootUI-Bold"),
+    local("PTRootUI-Bold"),
+    url("../fonts/PTRootUI-Bold.woff2") format("woff2"),
+    url("../fonts/PTRootUI-Bold.woff") format("woff");
 }

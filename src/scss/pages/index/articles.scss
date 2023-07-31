@@ -1,0 +1,142 @@
+.articles {
+  padding: 6.4rem 0 10rem;
+
+  @include mq(sm) {
+    padding: 2.4rem 0 2.6rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+
+    @include mq(sm) {
+      text-align: center;
+    }
+  }
+
+  &__swiper {
+    overflow: hidden;
+
+    @include mq(sm) {
+      overflow: visible;
+    }
+  }
+
+  &__swiper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100% !important;
+    min-height: 34.8rem;
+    padding: 3rem;
+    overflow: hidden;
+    color: var(--color-white);
+    border-radius: 3.5rem;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      background-color: var(--color-dark);
+      height: 100%;
+      opacity: 0.6;
+      content: '';
+    }
+  }
+
+  &__swiper-item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  &__swiper-item-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 3rem;
+
+    @include mq(sm) {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
+
+  &__swiper-item-desc {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+    @include mq(sm) {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  }
+
+  &__swiper-item-btn {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-top: auto;
+    padding: 0.9rem 6.5rem;
+    background-color: var(--color-orange);
+    align-self: flex-start;
+    border-radius: 0.88rem;
+    transition: background-color var(--transition), color var(--transition);
+
+    &:hover {
+      background-color: #FFB990;
+    }
+
+    @include mq(sm) {
+      align-self: center;
+    }
+  }
+
+  &__swiper-navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.8rem;
+
+    @include mq(xs) {
+      justify-content: center;
+    }
+  }
+
+  &__swiper-navigation-prev,
+  &__swiper-navigation-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--color-orange);
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.swiper-button-disabled {
+      background-color: #FFB990;
+    }
+
+    svg {
+      fill: transparent;
+      stroke: var(--color-white);
+      stroke-width: 0.2rem;
+    }
+  }
+
+  &__swiper-navigation-prev {
+    margin-right: 1rem;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}

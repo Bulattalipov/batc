@@ -1,0 +1,25 @@
+.main-menu {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -110%;
+  padding: 13rem 0 4.5rem;
+  background-color: var(--color-white);
+  transition: top .5s;
+  z-index: 4;
+
+  &.active {
+    top: 0;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__list-link {
+    display: block;
+    color: var(--color-dark);
+    font-size: 2.9rem;
+  }
+}

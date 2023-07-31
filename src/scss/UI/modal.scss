@@ -22,35 +22,96 @@
     left: 50%;
     display: none;
     width: 100%;
-    max-width: 50rem;
-    height: auto;
+    max-width: 120rem;
+    height: 100%;
     background-color: var(--color-white);
     border-radius: 1.6rem;
-    box-shadow: 0 0 1rem rgba($color: #000, $alpha: 10%);
+    box-shadow: 1rem 1rem 2rem 0 rgba(0, 0, 0, 0.25), -1rem -1rem 2rem 0 rgba(0, 0, 0, 0.25);
     transform: translate(-50%, -50%);
 
     &.modal-open {
       display: block;
     }
+
+    &.modal--application {
+      height: auto;
+      border-radius: 7.4rem;
+
+      @include mq(sm) {
+        border-radius: 1.6rem;
+      }
+    }
+
+    &.modal--success {
+      height: auto;
+      border-radius: 7.4rem;
+
+      @include mq(sm) {
+        border-radius: 1.6rem;
+      }
+
+      .modal__title {
+        margin: 8rem 0;
+        color: var(--color-orange);
+
+        @include mq(sm) {
+          margin: 4rem 0;
+        }
+      }
+    }
+
+    &.modal--error {
+      height: auto;
+      border-radius: 7.4rem;
+
+      @include mq(sm) {
+        border-radius: 1.6rem;
+      }
+
+      .modal__title {
+        margin: 8rem 0;
+
+        @include mq(sm) {
+          margin: 4rem 0;
+        }
+      }
+    }
   }
 
   &__content {
-    position: relative;
-    padding: 3.4rem 4rem;
+    // position: relative;
+    height: 100%;
+    padding: 6.5rem;
+    overflow-y: auto;
+
+    @include mq(md) {
+      padding: 6.5rem 4rem;
+    }
+
+    @include mq(sm) {
+      padding: 3rem 3rem 3rem 2rem;
+    }
   }
 
   &__close-btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 2.8rem;
+    right: 2.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5.4rem;
-    height: 5.4rem;
-    background-color: transparent;
+    width: 4.4rem;
+    height: 4.4rem;
+    background-color: var(--color-orange);
     border-radius: 50%;
     cursor: pointer;
+
+    @include mq(sm) {
+      top: 1.2rem;
+      right: 1.2rem;
+      width: 3rem;
+      height: 3rem;
+    }
 
     &:hover {
       /** span {
@@ -70,9 +131,9 @@
       top: 50%;
       left: 50%;
       display: block;
-      width: 1.3rem;
-      height: 0.1rem;
-      background-color: black;
+      width: 2.4rem;
+      height: 0.3rem;
+      background-color: var(--color-white);
       transform: translate(-50%, -50%);
       transition: background-color var(--transition);
 
@@ -87,6 +148,123 @@
   }
 
   &__legend {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 8rem;
+
+    @include mq(lg) {
+      font-size: 5rem;
+    }
+
+    @include mq(sm) {
+      text-align: center;
+      font-size: 3.2rem;
+    }
+  }
+
+  &__price {
+    margin-bottom: 4.7rem;
+    font-weight: 700;
+    font-size: 5rem;
+
+    @include mq(lg) {
+      font-size: 4rem;
+    }
+
+    @include mq(sm) {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 3rem;
+
+    @include mq(sm) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0.7rem 3rem;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+
+    @include mq(sm) {
+      justify-content: center;
+    }
+  }
+
+  &__list-item-img {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1rem;
+    object-fit: cover;
+  }
+
+  &__list-item-text {
+    font-weight: 500;
+    font-size: 3.5rem;
+
+    @include mq(lg) {
+      font-size: 2.5rem;
+    }
+
+    @include mq(sm) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__button {
+    margin-top: 6.4rem;
+
+    @include mq(sm) {
+      margin-top: 4rem;
+    }
+  }
+
+  &__title {
     text-align: center;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+
+    @include mq(sm) {
+      margin-top: 2rem;
+      font-size: 3rem;
+    }
+  }
+
+  .input__control {
+    border: 0.2rem solid var(--color-dark);
+    color: #8C8C8C;
+
+    &::placeholder {
+      color: #8C8C8C;
+    }
+  }
+
+  .checkbox__control {
+    &::before {
+      border: 0.2rem solid var(--color-dark);
+    }
+
+    &::after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='23' viewBox='0 0 24 23' fill='none'%3E%3Crect y='14.7095' width='2' height='10' transform='rotate(-40.7422 0 14.7095)' fill='%232B2B2B'/%3E%3Crect x='6.52637' y='22.2861' width='2' height='21.9045' transform='rotate(-130.742 6.52637 22.2861)' fill='%232B2B2B'/%3E%3C/svg%3E");
+    }
+  }
+
+  &__form {
+    margin: 0 auto;
+    max-width: 68.8rem;
+  }
+
+  .form__button {
+    display: block;
+    margin: 8.2rem auto 0;
   }
 }

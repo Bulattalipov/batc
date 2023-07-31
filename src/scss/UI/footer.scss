@@ -1,3 +1,40 @@
 .footer {
-  display: block;
+  padding: 6rem 0 12.4rem;
+  color: var(--color-white);
+  background-color: var(--color-dark);
+
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.2rem;
+
+    @include mq(lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq(sm) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 4rem;
+      text-align: center;
+    }
+  }
+
+  &__column-title {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 3.2rem;
+  }
+
+  &__column-list-item {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__column-list-link {
+    font-weight: 500;
+    font-size: 2rem;
+  }
 }
