@@ -10,6 +10,7 @@ import phoneMask from './modules/inputMask';
 import swiperWorkedBetter from './modules/SwiperWorkedBetter';
 import swiperTariffs from './modules/swiperTariffs';
 import articlesSwiper from './modules/articlesSwiper';
+import introSwiperImg from './modules/introSwiperImg';
 
 documenReady(() => {
   window.batc_API = {};
@@ -24,6 +25,7 @@ documenReady(() => {
   swiperWorkedBetter();
   swiperTariffs();
   articlesSwiper();
+  introSwiperImg();
 });
 
 function accordion() {
