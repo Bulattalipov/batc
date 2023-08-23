@@ -1,0 +1,60 @@
+-
+  servicesLit = [
+    {title: "Запись звонков", price: "от 990 ₽", priceNUmber: "990"},
+    {title: "Интеграция с CRM  ", price: "500 ₽", priceNUmber: "500"},
+    {title: "Статистика", price: "800 ₽", priceNUmber: "800"},
+    {title: "Эффективные продажи", price: "500 ₽", priceNUmber: "500"},
+    {title: "Эффективные звонки", price: "500 ₽", priceNUmber: "500"},
+    {title: "Большой Бизнес", price: "2000 ₽", priceNUmber: "2000"},
+  ]
+
+section.services
+  .site-container
+    h2.services__title.title Подключайте функции, которые вам необходимы
+    p.services__desc
+      | Для новых клиентов доступен тестовый период. 7 дней все функции Виртуальной АТС бесплатны, оплата только за исходящие звонки
+    .services-box
+      .services-box__title Количество сотрудников
+      .services-box__row
+        .js-range-single-parent.services-box__inpt
+          label.input
+            //- readonly
+            input(type="text" class="input__control js-range-single-input" name="property-value" placeholder="0")
+            .js-range-single(data-price="" data-value="1" data-start="7" data-min="7" data-max="1000" data-step="1")
+        .services-box__staff #[span(class="services-box__staff-number") 200] ₽ за каждого дополнительного сотрудника
+      .services-box__name Расширенный функционал
+      ul.services-box__list
+        each item, i in servicesLit
+          - var index = i + 1
+          li.services-box__item
+            .services-box__item-title= item.title
+            .services-box__item-tooltip
+              button.services-box__item-tooltip-close-btn(type="button")
+                span
+                span
+              .services-box__item-tooltip-content
+                h4 Запись звонков от 990 ₽
+                p Повышение качества обслуживания и защита бизнеса от юридических рисков.
+                ul
+                  li Срок хранения записей — до 1 года.
+                  li Срок хранения записей — до 1 года.
+                  li Неограниченный объем хранилища.
+                  li Выгрузка записей на ftp-сервер.
+            .services-box__item-price= item.price
+            .switcher
+              input(class="visually-hidden js-service-switcher" type="checkbox" id=`s-${index}` name="swicher" value=`${item.priceNUmber}`)
+              label(for=`s-${index}` class="switcher__container")
+                span.switcher__control
+    .services-calculation
+      .services-calculation__box
+        .services-calculation__title Расчет стоимости
+        .services-calculation__item.js-services-extended
+          .services-calculation__item-title Расширенный функционал
+          .services-calculation__item-price 0 ₽
+        .services-calculation__item-contain
+        .services-calculation__item.js-more-employee
+          .services-calculation__item-title Доп. сотрудник (#[span(class="js-more-employee-number") 0])
+          .services-calculation__item-price 0 ₽
+      .services-calculation__total
+        .services-calculation__title ИТОГО #[span(class="services-calculation__total-number") 0 ₽]
+        a.services-calculation__button.button(href="/") Отправить заявку

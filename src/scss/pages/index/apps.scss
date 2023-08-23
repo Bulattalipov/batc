@@ -1,0 +1,65 @@
+.apps {
+  padding: 5.2rem 0;
+
+  @include mq(sm) {
+    padding: 4rem 0 3rem;
+  }
+
+  &__title {
+    color: #FE5000;
+
+    @include mq(xs) {
+      font-size: 2rem;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include mq(xs) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    width: 22.8rem;
+    height: 22.8rem;
+    margin-left: auto;
+
+    @include mq(sm) {
+      display: none;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem;
+    margin-left: 4rem;
+
+    @include mq(xs) {
+      margin-top: 4rem;
+      margin-left: 0;
+    }
+  }
+
+  &__box-link {
+    margin-bottom: 1.6rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__box-img {
+    width: 19rem;
+    height: 5.8rem;
+    object-fit: contain;
+
+    @include mq(xs) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

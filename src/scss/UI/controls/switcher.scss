@@ -1,0 +1,64 @@
+/* stylelint-disable selector-class-pattern */
+.switcher {
+  &__container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__control {
+    position: relative;
+    display: block;
+    width: 5.9rem;
+    height: 3.1rem;
+    background-color: #FFB990;
+    border-radius: 5rem;
+    transition: background-color var(--transition);
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0.2rem;
+      width: 2.6rem;
+      height: 2.6rem;
+      background-color: #fff;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      transition: left var(--transition);
+      content: "";
+
+      @include mq(xs) {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    @include mq(sm) {
+      order: 123;
+    }
+
+    @include mq(xs) {
+      width: 4.3rem;
+      height: 2.2rem;
+    }
+  }
+
+  input {
+    &:checked {
+      ~.switcher__container {
+        .switcher__control {
+          background-color: #FE5000;
+
+          &::before {
+            left: 3.1rem;
+
+            @include mq(xs) {
+              left: 2.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

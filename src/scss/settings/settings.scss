@@ -12,7 +12,7 @@ html {
   line-height: 1.2;
 
   @include mq(custom, max, 1440) {
-    font-size: 9px;
+    font-size: 8px;
   }
 
   @include mq(sm) {
@@ -31,7 +31,7 @@ html {
 body {
   color: var(--color-dark);
   font: var(--font-body);
-  background-color: var(--color-bg);
+  background-color: #fff;
 }
 
 ul,
@@ -172,7 +172,7 @@ img {
 
 .site-container {
   width: 100%;
-  max-width: 1546px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 var(--padding-offset);
 }
@@ -222,6 +222,10 @@ a:focus {
 .title {
   font-size: 5rem;
   font-weight: 700;
+
+  @include mq(custom, min, 1440) {
+    font-size: 4rem;
+  }
 
   @include mq(md) {
     font-size: 4rem;

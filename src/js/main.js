@@ -11,6 +11,11 @@ import swiperWorkedBetter from './modules/SwiperWorkedBetter';
 import swiperTariffs from './modules/swiperTariffs';
 import articlesSwiper from './modules/articlesSwiper';
 import introSwiperImg from './modules/introSwiperImg';
+import rangeSlider from './modules/rangeSlider';
+import calculator, {
+  openCloseBlock
+} from './modules/calculator';
+import openHiddenItem from './modules/openHiddenItem';
 
 documenReady(() => {
   window.batc_API = {};
@@ -26,6 +31,10 @@ documenReady(() => {
   swiperTariffs();
   articlesSwiper();
   introSwiperImg();
+  rangeSlider();
+  calculator();
+  openHiddenItem();
+  openCloseBlock();
 });
 
 function accordion() {

@@ -21,6 +21,10 @@
     border-radius: 2rem;
     box-shadow: 0 0 3rem 0 rgba(188, 188, 188, 0.48);
 
+    @include mq(custom, min, 1440) {
+      font-size: 3rem;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }

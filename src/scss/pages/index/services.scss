@@ -1,0 +1,484 @@
+.services {
+  padding: 4.1rem 0 3.3rem;
+
+  &__title {
+    margin-bottom: 3.5rem;
+
+    @include mq(custom, min, 1440) {
+      font-size: 4rem;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 3.7rem;
+    font-weight: 500;
+    font-size: 3.5rem;
+
+    @include mq(custom, min, 1440) {
+      font-size: 3rem;
+    }
+
+    @include mq(md) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.services-box {
+  margin-bottom: 2.6rem;
+  padding: 3.4rem 2rem 2.1rem;
+  background: #F3F3F3;
+  border-radius: 5rem;
+  box-shadow: -0.2rem -0.2rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+
+  @include mq(sm) {
+    padding: 2rem 1.2rem;
+    background-color: #FFB990;
+    border-radius: 2rem;
+  }
+
+  @include mq(xs) {
+    padding: 2rem 0.7rem;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 5rem;
+
+    @include mq(md) {
+      font-size: 4rem;
+    }
+
+    @include mq(sm) {
+      font-size: 3.5rem;
+    }
+
+    @include mq(xs) {
+      font-size: 2rem;
+    }
+  }
+
+  .input__control {
+    margin-bottom: 2.6rem;
+    color: #FE5000;
+    font-weight: 500;
+    font-size: 5rem;
+
+    @include mq(custom, min, 1440) {
+      font-size: 4rem;
+    }
+
+    @include mq(md) {
+      font-size: 4rem;
+    }
+
+    @include mq(sm) {
+      color: #fff;
+      font-size: 3.5rem;
+    }
+
+    @include mq(xs) {
+      font-size: 3rem;
+    }
+  }
+
+  &__row {
+    display: flex;
+
+    @include mq(sm) {
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__inpt {
+    width: 45rem;
+    margin-right: 5.8rem;
+
+    @include mq(sm) {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+
+  .noUi-target {
+    height: 0.5rem;
+    background-color: #FE5000;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 7rem;
+
+    @include mq(sm) {
+      height: 0.3rem;
+      margin-bottom: 5rem;
+      background-color: #fff;
+    }
+  }
+
+  .noUi-connects {
+    overflow: visible;
+    border-radius: 0.5rem;
+  }
+
+  .noUi-connect {
+    background-color: #fff;
+
+    @include mq(sm) {
+      top: -0.1rem;
+      height: 0.5rem;
+    }
+  }
+
+  .noUi-marker-horizontal.noUi-marker {
+    display: none;
+  }
+
+  .noUi-horizontal .noUi-handle {
+    top: -1.4rem;
+    width: 3.1rem;
+    height: 3rem;
+    border-radius: 0.6rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    @include mq(sm) {
+      top: -1rem;
+      width: 3.5rem;
+      height: 2.3rem;
+    }
+
+    &::before {
+      top: 0.5rem;
+      left: 0.3rem;
+      width: 3rem;
+      color: #FE5000;
+      background-color: transparent;
+      content: "< >";
+
+      @include mq(sm) {
+        display: none;
+      }
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .noUi-value-horizontal {
+    color: rgba(13, 13, 13, 0.45);
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  .noUi-value-horizontal {
+
+    transform: none;
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  .noUi-pips-horizontal {
+    height: auto;
+  }
+
+  &__staff {
+    margin-top: 7rem;
+    color: #0D0D0D;
+    font-weight: 500;
+    font-size: 2rem;
+
+    @include mq(sm) {
+      margin-top: 0;
+    }
+
+    @include mq(xs) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__name {
+    margin-bottom: 2.4rem;
+    font-weight: 500;
+    font-size: 3.5rem;
+
+    @include mq(sm) {
+      font-size: 2.5rem;
+    }
+
+    @include mq(xs) {
+      font-size: 2rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.1rem;
+    padding: 1.6rem 3.1rem 1.6rem 1.4rem;
+    background: #FFFDFD;
+    border-radius: 1.7rem;
+
+    @include mq(sm) {
+      padding: 1rem 1.5rem 1rem 0.8rem;
+      box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .switcher {
+      margin-left: 6.7rem;
+
+      @include mq(sm) {
+        margin-left: 2rem;
+      }
+
+      @include mq(xs) {
+        margin-left: 0.6rem;
+      }
+    }
+  }
+
+  &__item-title {
+    font-weight: 500;
+    font-size: 3rem;
+    text-decoration-line: underline;
+    cursor: pointer;
+
+    @include mq(sm) {
+      font-size: 2.5rem;
+    }
+
+    @include mq(xs) {
+      font-size: 2rem;
+    }
+  }
+
+  &__item-price {
+    flex-shrink: 0;
+    margin-left: auto;
+    padding-left: 0.7rem;
+    font-weight: 500;
+    font-size: 3rem;
+
+    @include mq(sm) {
+      font-size: 2.5rem;
+    }
+
+    @include mq(xs) {
+      font-size: 2rem;
+    }
+  }
+
+  &__item-tooltip {
+    display: none;
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    max-width: 64.5rem;
+    padding: 2.2rem 4.5rem 2.2rem 2.8rem;
+    background: #FFF;
+    border-radius: 3.3rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25), -0.4rem -0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+    z-index: 2;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__item-tooltip-close-btn {
+    position: absolute;
+    top: 1.9rem;
+    right: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+
+    @include mq(sm) {
+      top: 1.2rem;
+      right: 1.2rem;
+      width: 3rem;
+      height: 3rem;
+    }
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 2.4rem;
+      height: 0.3rem;
+      background-color: #FE5000;
+      transform: translate(-50%, -50%);
+      transition: background-color var(--transition);
+
+      &:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+
+      &:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+  }
+
+  &__item-tooltip-content {
+    font-size: 2rem;
+
+    &>*:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    h4 {
+      font-weight: 700;
+    }
+
+    li {
+      position: relative;
+      padding-left: 2rem;
+
+      &::before {
+        position: absolute;
+        left: 0.7rem;
+        content: "•";
+      }
+    }
+  }
+}
+
+
+.services-calculation {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 5.6rem 3.2rem 3.8rem;
+  background: #FFF;
+  border-radius: 5rem;
+  box-shadow: 0.4rem -0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+
+  @include mq(custom, max, 1024) {
+    flex-direction: column;
+  }
+
+  @include mq(sm) {
+    padding: 2rem 1.2rem;
+    box-shadow: none;
+  }
+
+  @include mq(xs) {
+    padding: 2rem 0.7rem;
+  }
+
+  &__box {
+    width: 60rem;
+
+    @include mq(custom, max, 1024) {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.8rem;
+    color: #FE5000;
+    font-weight: 500;
+    font-size: 3rem;
+
+    @include mq(sm) {
+      font-size: 2rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 3rem;
+
+    &:last-child {
+      margin-top: 2.4rem;
+    }
+
+    @include mq(sm) {
+      font-size: 2rem;
+    }
+  }
+
+  &__item-title {
+    @include mq(xs) {
+      width: min-content;
+    }
+  }
+
+  &__item-price {
+    flex-shrink: 0;
+    margin-left: 0.7rem;
+  }
+
+  &__item-contain {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    .services-calculation__item {
+      margin-top: 1.3rem;
+    }
+
+    .services-calculation__item-title {
+      text-decoration: underline;
+    }
+  }
+
+  &__item-title {
+    &.active {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: underline;
+      cursor: pointer;
+
+      &::after {
+        position: relative;
+        display: block;
+        width: 2.7rem;
+        height: 1.6rem;
+        margin-left: 1rem;
+        background-image: url('../images/services/arrow-down.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+      }
+    }
+  }
+
+  &__total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 16rem;
+    flex: 1;
+
+    @include mq(custom, max, 1024) {
+      margin-left: 0;
+    }
+  }
+
+  &__button {
+    align-self: flex-end;
+  }
+}
