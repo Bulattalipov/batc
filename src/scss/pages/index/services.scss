@@ -157,7 +157,8 @@
       content: "< >";
 
       @include mq(sm) {
-        display: none;
+        top: 0.2rem;
+        left: 0.5rem;
       }
     }
 
@@ -345,9 +346,19 @@
       font-weight: 700;
     }
 
+    p {
+      @include mq(xs) {
+        font-size: 1.6rem;
+      }
+    }
+
     li {
       position: relative;
       padding-left: 2rem;
+
+      @include mq(xs) {
+        font-size: 1.6rem;
+      }
 
       &::before {
         position: absolute;
@@ -439,8 +450,13 @@
       margin-top: 1.3rem;
     }
 
-    .services-calculation__item-title {
-      text-decoration: underline;
+    .services-calculation__item-title,
+    .services-calculation__item-price {
+      font-size: 2.5rem;
+
+      @include mq(sm) {
+        font-size: 1.8rem;
+      }
     }
   }
 

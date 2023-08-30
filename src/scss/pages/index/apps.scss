@@ -39,6 +39,7 @@
     margin-left: 4rem;
 
     @include mq(xs) {
+      flex-direction: row;
       margin-top: 4rem;
       margin-left: 0;
     }
@@ -49,6 +50,10 @@
 
     &:last-child {
       margin-bottom: 0;
+
+      @include mq(xs) {
+        margin-left: 1rem;
+      }
     }
   }
 
