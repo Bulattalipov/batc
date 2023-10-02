@@ -5,16 +5,16 @@ export default () => {
   let mainMenuBtns = mainMenu.querySelectorAll(".nav__list-link");
 
   menuBtn.addEventListener('click', function () {
-    body.classList.toggle('disable-scroll');
+    // body.classList.toggle('disable-scroll');
     menuBtn.classList.toggle('active');
     mainMenu.classList.toggle('active');
   })
 
-  mainMenuBtns.forEach(item => {
-    item.addEventListener('click', () => {
-      body.classList.toggle('disable-scroll');
-      menuBtn.classList.toggle('active');
-      mainMenu.classList.toggle('active');
-    })
-  })
+  // mainMenuBtns.forEach(item => {
+  //   item.addEventListener('click', () => {
+  //     body.classList.toggle('disable-scroll');
+  //     menuBtn.classList.toggle('active');
+  //     mainMenu.classList.toggle('active');
+  //   })
+  // })
 }

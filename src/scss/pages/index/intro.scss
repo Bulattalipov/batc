@@ -1,17 +1,14 @@
 .intro {
   position: relative;
   z-index: 1;
-  height: calc(100vh - 10rem);
+  height: 100vh;
   min-height: 70rem;
+  margin-top: var(--header-height);
   padding-top: 7rem;
   padding-bottom: 4.8rem;
   color: var(--color-white);
   background-repeat: no-repeat;
   background-size: cover;
-
-  @media screen and (max-height: 590px) {
-    height: 60rem;
-  }
 
   .site-container {
     display: flex;

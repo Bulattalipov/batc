@@ -5,6 +5,12 @@ import Swiper, {
 Swiper.use([Navigation]);
 
 export default function () {
+
+  const body = document.querySelector('body');
+  if (body.classList.contains('is-admin')) {
+    return;
+  }
+
   const sliders = document.querySelectorAll('.articles__swiper-wrapper');
 
   sliders.forEach(slider => {

@@ -6,6 +6,12 @@ import Swiper, {
 Swiper.use([Navigation, Pagination]);
 
 export default function () {
+
+  const body = document.querySelector('body');
+  if (body.classList.contains('is-admin')) {
+    return;
+  }
+
   if (window.matchMedia('(max-width: 1200px)').matches) {
     const sliders = document.querySelectorAll('.tariffs__swiper');
 

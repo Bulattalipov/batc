@@ -7,6 +7,11 @@ Swiper.use([Navigation, Pagination]);
 
 export default function swiperWorkedBetter() {
 
+  const body = document.querySelector('body');
+  if (body.classList.contains('is-admin')) {
+    return;
+  }
+
   const sliders = document.querySelectorAll('.worked-better__swiper-wrapper');
 
   sliders.forEach(slider => {

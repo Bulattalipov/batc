@@ -16,6 +16,10 @@ import calculator, {
   openCloseBlock
 } from './modules/calculator';
 import openHiddenItem from './modules/openHiddenItem';
+import smoothScroll from './modules/smoothScroll';
+import {
+  getHeaderHeight
+} from './modules/header-height';
 
 documenReady(() => {
   window.batc_API = {};
@@ -35,6 +39,8 @@ documenReady(() => {
   calculator();
   openHiddenItem();
   openCloseBlock();
+  smoothScroll();
+  getHeaderHeight();
 });
 
 function accordion() {

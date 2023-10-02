@@ -425,34 +425,28 @@ export default function validation() {
       trigger: 'change'
     });
 
-    // form.addEventListener("submit", (e) => {
-    //   e.preventDefault();
-    //   let formData = new FormData(form);
-    //   const url = form.getAttribute("action");
-    //   const labels = form.querySelectorAll('.js-input-heading');
 
-    //   if ($(form).parsley().isValid()) {
-    //     axios.post(url, formData)
-    //       .then((response) => {
-    //         if (response.data.ID > 0) {
-    //           const fileContainer = form.querySelector(".file-upload__text");
-    //           form.querySelector(".form__btn").classList.remove("disabled");
 
-    //           if (fileContainer) fileContainer.remove();
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let formData = new FormData(form);
+      const url = form.getAttribute("action");
 
-    //           window.gis_API.modal.close();
+      if ($(form).parsley().isValid()) {
+        axios.post(url, formData)
+          .then((response) => {
+            if (response.data.ID > 0) {
+              window.batc_API.modal.close();
+              window.batc_API.modal.onOpen("modal-success");
 
-    //           window.gis_API.modal.onOpen("success");
-
-    //           $(form).trigger("reset");
-    //           labels.forEach(label => label.classList.remove("is-active"));
-    //         }
-    //       })
-    //       .catch((error) => {
-    //         window.gis_API.modal.close();
-    //         window.gis_API.modal.onOpen("error");
-    //       });
-    //   }
-    // });
+              $(form).trigger("reset");
+            }
+          })
+          .catch((error) => {
+            window.batc_API.modal.close();
+            window.batc_API.modal.onOpen("modal-error");
+          });
+      }
+    });
   });
 }

@@ -7,6 +7,12 @@ import {
 } from './calculator';
 
 export default () => {
+
+  const body = document.querySelector('body');
+  if (body.classList.contains('is-admin')) {
+    return;
+  }
+
   const slidersSingle = document.querySelectorAll('.js-range-single');
 
   if (slidersSingle.length === 0) return;
