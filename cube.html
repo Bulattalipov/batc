@@ -15,7 +15,7 @@
     <title>Главная | Название сайта</title>
     <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.0">
   </head>
-  <body class="page-home">
+  <body class="page-cube">
     <div class="page-wrapper">
 
       <header class="header">
@@ -40,6 +40,7 @@
                 </li>
               </ul>
             </nav>
+            <button class="header__call button-2">Позвонить</button>
             <button class="header__btn"><span></span><span></span><span></span>
             </button>
           </div>
@@ -64,6 +65,7 @@
                 </li>
               </ul>
             </nav>
+            <button class="header__call button-2">Позвонить</button>
           </div>
         </div>
       </div>
@@ -73,19 +75,17 @@
           <div class="cube-intro__imgs">
             <img class="cube-intro__img cube-intro__img--wifi-big" src="assets/images/cube-intro/wifi-big.png" alt="">
             <img class="cube-intro__img cube-intro__img--wifi-norm" src="assets/images/cube-intro/wifi-norm.png" alt="">
-            <img class="cube-intro__img cube-intro__img--arc" src="assets/images/cube-intro/arc.svg" alt="">
           </div>
           <div class="site-container-2">
             <div class="cube-intro__inner">
               <div class="cube-intro__info">
                 <img class="cube-intro__title" src="assets/images/cube-intro/title.svg" alt="">
-                <div class="cube-intro__desc">
-                  <div class="cube-intro__desc-item">Больше чем просто Интернет</div>
-                  <div class="cube-intro__desc-item">Заполняет пространство дополняет интерьер</div>
+                <div class="cube-intro__box">
+                  <img class="cube-intro__box-img-modem" src="assets/images/cube-intro/modem.png" alt="">
                 </div>
-              </div>
-              <div class="cube-intro__box">
-                <img class="cube-intro__box-img-modem" src="assets/images/cube-intro/modem.png" alt="">
+                <div class="cube-intro__desc" id="typed"></div>
+                <div class="cube-intro__texts" id="typed-strings"><span>Больше чем просто Интернет</span><span>Заполняет пространство дополняет интерьер</span>
+                </div>
               </div>
             </div>
           </div>
@@ -112,233 +112,243 @@
           <div class="site-container-2">
             <div class="cube-tariff__wrapper">
               <h2 class="cube-tariff__title title-2">Тарифы</h2>
-              <ul class="cube-tariff__items">
-                <li class="cube-tariff__item cube-tariff__item--colm-2">
-                  <div class="cube-tariff__item-title">Летай. Оранжевый. Профит</div>
-                  <div class="cube-tariff__item-desc">Интернет + ТВ</div>
-                  <ul class="cube-tariff__item-list">
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <label class="switcher">
-                        <input class="visually-hidden" type="checkbox" name="swicher">
-                        <div class="switcher__container"><span class="switcher__control"></span>
+              <ul class="cube-tariff__items cube-tariff__swiper">
+                <div class="swiper-wrapper">
+                  <li class="swiper-slide cube-tariff__item cube-tariff__item--colm-2">
+                    <div class="cube-tariff__item-title">Летай. Оранжевый. Профит</div>
+                    <div class="cube-tariff__item-desc">Интернет + ТВ</div>
+                    <ul class="cube-tariff__item-list">
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
                         </div>
-                      </label>
-                      <div class="cube-tariff__item-elem-text" data-rent="100">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="cube-tariff__item-price">
-                    <div class="cube-tariff__item-price-discount">скидка на 3 месяца</div>
-                    <div class="cube-tariff__item-price-box">
-                      <div class="cube-tariff__item-price-elem"><span>275</span>₽/мес</div>
-                      <div class="cube-tariff__item-price-crossed"><span>550</span>₽/мес</div>
-                    </div>
-                  </div>
-                  <a class="cube-tariff__item-button button-2" href="#">Подключить</a>
-                  <a class="cube-tariff__item-link" href="#">Подробнее о тарифе</a>
-                </li>
-                <li class="cube-tariff__item cube-tariff__item--colm-2">
-                  <div class="cube-tariff__item-title">Летай. Оранжевый. Профит</div>
-                  <div class="cube-tariff__item-desc">Интернет + ТВ</div>
-                  <ul class="cube-tariff__item-list">
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <label class="switcher">
-                        <input class="visually-hidden" type="checkbox" name="swicher">
-                        <div class="switcher__container"><span class="switcher__control"></span>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <label class="switcher">
+                          <input class="visually-hidden" type="checkbox" name="swicher">
+                          <div class="switcher__container"><span class="switcher__control"></span>
+                          </div>
+                        </label>
+                        <div class="cube-tariff__item-elem-text" data-rent="100">Интернет до<span>100 Мбит/сек</span>
                         </div>
-                      </label>
-                      <div class="cube-tariff__item-elem-text" data-rent="100">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="cube-tariff__item-price">
-                    <div class="cube-tariff__item-price-discount">скидка на 3 месяца</div>
-                    <div class="cube-tariff__item-price-box">
-                      <div class="cube-tariff__item-price-elem"><span>275</span>₽/мес</div>
-                      <div class="cube-tariff__item-price-crossed"><span>550</span>₽/мес</div>
-                    </div>
-                  </div>
-                  <a class="cube-tariff__item-button button-2" href="#">Подключить</a>
-                  <a class="cube-tariff__item-link" href="#">Подробнее о тарифе</a>
-                </li>
-                <li class="cube-tariff__item">
-                  <div class="cube-tariff__item-title">Летай. Оранжевый. Профит</div>
-                  <div class="cube-tariff__item-desc">Интернет + ТВ</div>
-                  <ul class="cube-tariff__item-list cube-tariff__item-list--colm-1">
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <label class="switcher">
-                        <input class="visually-hidden" type="checkbox" name="swicher">
-                        <div class="switcher__container"><span class="switcher__control"></span>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
                         </div>
-                      </label>
-                      <div class="cube-tariff__item-elem-text" data-rent="100">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="cube-tariff__item-price">
-                    <div class="cube-tariff__item-price-box">
-                      <div class="cube-tariff__item-price-elem"><span>275</span>₽/мес</div>
-                    </div>
-                  </div>
-                  <a class="cube-tariff__item-button button-2" href="#">Подключить</a>
-                  <a class="cube-tariff__item-link" href="#">Подробнее о тарифе</a>
-                </li>
-                <li class="cube-tariff__item">
-                  <div class="cube-tariff__item-title">Летай. Оранжевый. Профит</div>
-                  <div class="cube-tariff__item-desc">Интернет + ТВ</div>
-                  <ul class="cube-tariff__item-list cube-tariff__item-list--colm-1">
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <label class="switcher">
-                        <input class="visually-hidden" type="checkbox" name="swicher">
-                        <div class="switcher__container"><span class="switcher__control"></span>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
                         </div>
-                      </label>
-                      <div class="cube-tariff__item-elem-text" data-rent="100">Интернет до<span>100 Мбит/сек</span>
+                      </li>
+                    </ul>
+                    <div class="cube-tariff__item-price">
+                      <div class="cube-tariff__item-price-discount">скидка на 3 месяца</div>
+                      <div class="cube-tariff__item-price-box">
+                        <div class="cube-tariff__item-price-elem"><span>275</span>₽/мес</div>
+                        <div class="cube-tariff__item-price-crossed"><span>550</span>₽/мес</div>
                       </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="cube-tariff__item-price">
-                    <div class="cube-tariff__item-price-box">
-                      <div class="cube-tariff__item-price-elem"><span>275</span>₽/мес</div>
                     </div>
-                  </div>
-                  <a class="cube-tariff__item-button button-2" href="#">Подключить</a>
-                  <a class="cube-tariff__item-link" href="#">Подробнее о тарифе</a>
-                </li>
-                <li class="cube-tariff__item">
-                  <div class="cube-tariff__item-title">Летай. Оранжевый. Профит</div>
-                  <div class="cube-tariff__item-desc">Интернет + ТВ</div>
-                  <ul class="cube-tariff__item-list cube-tariff__item-list--colm-1">
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <label class="switcher">
-                        <input class="visually-hidden" type="checkbox" name="swicher">
-                        <div class="switcher__container"><span class="switcher__control"></span>
+                    <a class="cube-tariff__item-button button-2" href="#">Подключить</a>
+                    <a class="cube-tariff__item-link" href="#">Подробнее о тарифе</a>
+                  </li>
+                  <li class="swiper-slide cube-tariff__item cube-tariff__item--colm-2">
+                    <div class="cube-tariff__item-title">Летай. Оранжевый. Профит</div>
+                    <div class="cube-tariff__item-desc">Интернет + ТВ</div>
+                    <ul class="cube-tariff__item-list">
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
                         </div>
-                      </label>
-                      <div class="cube-tariff__item-elem-text" data-rent="100">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="cube-tariff__item-price">
-                    <div class="cube-tariff__item-price-box">
-                      <div class="cube-tariff__item-price-elem"><span>275</span>₽/мес</div>
-                    </div>
-                  </div>
-                  <a class="cube-tariff__item-button button-2" href="#">Подключить</a>
-                  <a class="cube-tariff__item-link" href="#">Подробнее о тарифе</a>
-                </li>
-                <li class="cube-tariff__item">
-                  <div class="cube-tariff__item-title">Летай. Оранжевый. Профит</div>
-                  <div class="cube-tariff__item-desc">Интернет + ТВ</div>
-                  <ul class="cube-tariff__item-list cube-tariff__item-list--colm-1">
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <label class="switcher">
-                        <input class="visually-hidden" type="checkbox" name="swicher">
-                        <div class="switcher__container"><span class="switcher__control"></span>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <label class="switcher">
+                          <input class="visually-hidden" type="checkbox" name="swicher">
+                          <div class="switcher__container"><span class="switcher__control"></span>
+                          </div>
+                        </label>
+                        <div class="cube-tariff__item-elem-text" data-rent="100">Интернет до<span>100 Мбит/сек</span>
                         </div>
-                      </label>
-                      <div class="cube-tariff__item-elem-text" data-rent="100">Интернет до<span>100 Мбит/сек</span>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="cube-tariff__item-price">
+                      <div class="cube-tariff__item-price-discount">скидка на 3 месяца</div>
+                      <div class="cube-tariff__item-price-box">
+                        <div class="cube-tariff__item-price-elem"><span>275</span>₽/мес</div>
+                        <div class="cube-tariff__item-price-crossed"><span>550</span>₽/мес</div>
                       </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                    <li class="cube-tariff__item-elem">
-                      <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
-                      <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="cube-tariff__item-price">
-                    <div class="cube-tariff__item-price-box">
-                      <div class="cube-tariff__item-price-elem"><span>275</span>₽/мес</div>
                     </div>
-                  </div>
-                  <a class="cube-tariff__item-button button-2" href="#">Подключить</a>
-                  <a class="cube-tariff__item-link" href="#">Подробнее о тарифе</a>
-                </li>
+                    <a class="cube-tariff__item-button button-2" href="#">Подключить</a>
+                    <a class="cube-tariff__item-link" href="#">Подробнее о тарифе</a>
+                  </li>
+                  <li class="swiper-slide cube-tariff__item">
+                    <div class="cube-tariff__item-title">Летай. Оранжевый. Профит</div>
+                    <div class="cube-tariff__item-desc">Интернет + ТВ</div>
+                    <ul class="cube-tariff__item-list cube-tariff__item-list--colm-1">
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <label class="switcher">
+                          <input class="visually-hidden" type="checkbox" name="swicher">
+                          <div class="switcher__container"><span class="switcher__control"></span>
+                          </div>
+                        </label>
+                        <div class="cube-tariff__item-elem-text" data-rent="100">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="cube-tariff__item-price">
+                      <div class="cube-tariff__item-price-box">
+                        <div class="cube-tariff__item-price-elem"><span>275</span>₽/мес</div>
+                      </div>
+                    </div>
+                    <a class="cube-tariff__item-button button-2" href="#">Подключить</a>
+                    <a class="cube-tariff__item-link" href="#">Подробнее о тарифе</a>
+                  </li>
+                  <li class="swiper-slide cube-tariff__item">
+                    <div class="cube-tariff__item-title">Летай. Оранжевый. Профит</div>
+                    <div class="cube-tariff__item-desc">Интернет + ТВ</div>
+                    <ul class="cube-tariff__item-list cube-tariff__item-list--colm-1">
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <label class="switcher">
+                          <input class="visually-hidden" type="checkbox" name="swicher">
+                          <div class="switcher__container"><span class="switcher__control"></span>
+                          </div>
+                        </label>
+                        <div class="cube-tariff__item-elem-text" data-rent="100">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="cube-tariff__item-price">
+                      <div class="cube-tariff__item-price-box">
+                        <div class="cube-tariff__item-price-elem"><span>275</span>₽/мес</div>
+                      </div>
+                    </div>
+                    <a class="cube-tariff__item-button button-2" href="#">Подключить</a>
+                    <a class="cube-tariff__item-link" href="#">Подробнее о тарифе</a>
+                  </li>
+                  <li class="swiper-slide cube-tariff__item">
+                    <div class="cube-tariff__item-title">Летай. Оранжевый. Профит</div>
+                    <div class="cube-tariff__item-desc">Интернет + ТВ</div>
+                    <ul class="cube-tariff__item-list cube-tariff__item-list--colm-1">
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <label class="switcher">
+                          <input class="visually-hidden" type="checkbox" name="swicher">
+                          <div class="switcher__container"><span class="switcher__control"></span>
+                          </div>
+                        </label>
+                        <div class="cube-tariff__item-elem-text" data-rent="100">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="cube-tariff__item-price">
+                      <div class="cube-tariff__item-price-box">
+                        <div class="cube-tariff__item-price-elem"><span>275</span>₽/мес</div>
+                      </div>
+                    </div>
+                    <a class="cube-tariff__item-button button-2" href="#">Подключить</a>
+                    <a class="cube-tariff__item-link" href="#">Подробнее о тарифе</a>
+                  </li>
+                  <li class="swiper-slide cube-tariff__item">
+                    <div class="cube-tariff__item-title">Летай. Оранжевый. Профит</div>
+                    <div class="cube-tariff__item-desc">Интернет + ТВ</div>
+                    <ul class="cube-tariff__item-list cube-tariff__item-list--colm-1">
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <label class="switcher">
+                          <input class="visually-hidden" type="checkbox" name="swicher">
+                          <div class="switcher__container"><span class="switcher__control"></span>
+                          </div>
+                        </label>
+                        <div class="cube-tariff__item-elem-text" data-rent="100">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                      <li class="cube-tariff__item-elem">
+                        <img class="cube-tariff__item-elem-icon" src="assets/images/cube-tariffs/wifi.svg" alt="">
+                        <div class="cube-tariff__item-elem-text">Интернет до<span>100 Мбит/сек</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="cube-tariff__item-price">
+                      <div class="cube-tariff__item-price-box">
+                        <div class="cube-tariff__item-price-elem"><span>275</span>₽/мес</div>
+                      </div>
+                    </div>
+                    <a class="cube-tariff__item-button button-2" href="#">Подключить</a>
+                    <a class="cube-tariff__item-link" href="#">Подробнее о тарифе</a>
+                  </li>
+                </div>
+                <div class="swiper-navigation">
+                  <button class="swiper-navigation__prev">
+                    <img class="swiper-navigation__img" src="assets/images/cube-tariffs/slider-btn.svg" alt="">
+                  </button>
+                  <button class="swiper-navigation__next">
+                    <img class="swiper-navigation__img" src="assets/images/cube-tariffs/slider-btn.svg" alt="">
+                  </button>
+                </div>
               </ul>
               <a class="cube-tariff__button button-2">Посмотреть все тарифы</a>
             </div>
