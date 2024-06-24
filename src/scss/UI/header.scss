@@ -5,7 +5,7 @@
   width: 100%;
   background-color: var(--color-orange);
   padding: 1.5rem 0;
-  z-index: 5;
+  z-index: 15;
 
   @include mq(md) {
     padding: 2.5rem 0;

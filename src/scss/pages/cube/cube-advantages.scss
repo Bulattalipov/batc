@@ -1,0 +1,43 @@
+.cube-advantages {
+  position: relative;
+  z-index: 2;
+  padding: 5.5rem 0 8.7rem;
+  background: linear-gradient(180deg, #fe5000 19.67%, #ffb990 79.17%);
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+
+    @include mq(md) {
+      flex-direction: column;
+    }
+
+    @include mq(md) {
+      gap: 6.2rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-img {
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 4.5rem;
+
+    @include mq(sm) {
+      margin-bottom: 2.6rem;
+    }
+  }
+
+  &__item-title {
+    font-size: 3.2rem;
+    line-height: 100%;
+    text-align: center;
+    color: #000;
+  }
+}

@@ -1,0 +1,23 @@
+.cube-application {
+  padding: 9.8rem 0 10.6rem;
+  background: linear-gradient(180deg, #acdbf6 0%, #fff 100%);
+  margin-top: -0.1rem;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq(custom, max, 1023) {
+      flex-direction: column;
+      gap: 4.5rem
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 3.2rem;
+    text-align: center;
+    color: #000;
+  }
+}
