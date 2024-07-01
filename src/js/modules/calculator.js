@@ -26,6 +26,11 @@ export default () => {
 }
 
 export function calculation() {
+
+  const section = document.querySelector('.services-calculation');
+
+  if (!section) return;
+
   const priceMoreEmployee = document.querySelector(".services-box__staff-number").innerHTML;
   const rangeInput = document.querySelector(".js-range-single-input");
   const rangeSingle = document.querySelector('.js-range-single');
@@ -121,6 +126,9 @@ export function calculation() {
 
 export function openCloseBlock() {
   const block = document.querySelector('.js-services-extended');
+
+  if (!block) return;
+
   const blockTitle = block.querySelector('.services-calculation__item-title');
   const blockContain = document.querySelector('.services-calculation__item-contain');
 

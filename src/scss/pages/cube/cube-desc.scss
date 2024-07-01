@@ -1,0 +1,96 @@
+.cube-desc {
+  padding: 5.3rem 0;
+  background: linear-gradient(180deg, #fff 0%, #fe5000 100%);
+
+  &__title {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 100%;
+    color: #fe5000;
+    margin-bottom: 7.2rem;
+
+    @include mq(sm) {
+      font-size: 4.5rem;
+    }
+
+    @include mq(xs) {
+      font-size: 4rem;
+    }
+  }
+
+  &__inner {
+    display: flex;
+
+    @include mq(md) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__box {
+    position: relative;
+    width: 100%;
+  }
+
+  &__box-img {
+    position: absolute;
+    z-index: 1;
+
+    &:nth-child(1) {
+      min-width: 100.6rem;
+      height: 81.9rem;
+      top: -8rem;
+      left: -21rem;
+
+      @include mq(sm) {
+        height: 45rem;
+        left: -30rem;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 56rem;
+      height: 42.8rem;
+      bottom: 0rem;
+      left: 64rem;
+    }
+  }
+
+  &__img {
+    position: relative;
+    z-index: 3;
+    min-width: 60rem;
+    height: 73.3rem;
+    margin-top: -9rem;
+
+    @include mq(md) {
+      min-width: auto;
+      width: 80%;
+    }
+
+    @include mq(md) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 60rem;
+    }
+
+    @include mq(sm) {
+      height: 50rem;
+    }
+  }
+
+  &__text {
+    max-width: 55.1rem;
+    width: 100%;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 100%;
+    text-align: justify;
+    color: #000;
+
+    @include mq(md) {
+      max-width: 100%;
+      margin-bottom: 10rem;
+    }
+  }
+}

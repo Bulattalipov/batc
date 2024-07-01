@@ -20,6 +20,9 @@ import smoothScroll from './modules/smoothScroll';
 import {
   getHeaderHeight
 } from './modules/header-height';
+import addingFoodQuantity from './modules/addingFoodQuantity';
+import tariffSwiper from './modules/cubeTariffSwiper';
+import typed from './modules/typed';
 
 documenReady(() => {
   window.batc_API = {};
@@ -41,6 +44,9 @@ documenReady(() => {
   openCloseBlock();
   smoothScroll();
   getHeaderHeight();
+  addingFoodQuantity();
+  tariffSwiper();
+  typed();
 });
 
 function accordion() {

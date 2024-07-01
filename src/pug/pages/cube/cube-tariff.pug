@@ -1,0 +1,73 @@
+section.cube-tariff
+  .site-container-2
+    .cube-tariff__wrapper
+      h2.cube-tariff__title.title-2 Тарифы
+      ul.cube-tariff__items.cube-tariff__swiper
+        .swiper-wrapper
+          each i in Array.from(Array(2).keys())
+            li.swiper-slide.cube-tariff__item.cube-tariff__item--colm-2
+              .cube-tariff__item-title Летай. Оранжевый. Профит
+              .cube-tariff__item-desc Интернет + ТВ
+              ul.cube-tariff__item-list
+                li.cube-tariff__item-elem
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
+                  .cube-tariff__item-elem-text
+                    | Интернет до #[span 100 Мбит/сек]
+                li.cube-tariff__item-elem
+                  label.switcher
+                    input(class="visually-hidden" type="checkbox" name="swicher")
+                    .switcher__container
+                      span.switcher__control
+                  .cube-tariff__item-elem-text(data-rent="100")
+                    | Интернет до #[span 100 Мбит/сек]
+                li.cube-tariff__item-elem
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
+                  .cube-tariff__item-elem-text
+                    | Интернет до #[span 100 Мбит/сек]
+                li.cube-tariff__item-elem
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
+                  .cube-tariff__item-elem-text
+                    | Интернет до #[span 100 Мбит/сек]
+              .cube-tariff__item-price
+                .cube-tariff__item-price-discount скидка на 3 месяца
+                .cube-tariff__item-price-box
+                  .cube-tariff__item-price-elem #[span 275] ₽/мес
+                  .cube-tariff__item-price-crossed #[span 550] ₽/мес
+              a.cube-tariff__item-button.button-2(href="#") Подключить
+              a.cube-tariff__item-link(href="#") Подробнее о тарифе
+          each i in Array.from(Array(4).keys())
+            li.swiper-slide.cube-tariff__item
+              .cube-tariff__item-title Летай. Оранжевый. Профит
+              .cube-tariff__item-desc Интернет + ТВ
+              ul.cube-tariff__item-list.cube-tariff__item-list--colm-1
+                li.cube-tariff__item-elem
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
+                  .cube-tariff__item-elem-text
+                    | Интернет до #[span 100 Мбит/сек]
+                li.cube-tariff__item-elem
+                  label.switcher
+                    input(class="visually-hidden" type="checkbox" name="swicher")
+                    .switcher__container
+                      span.switcher__control
+                  .cube-tariff__item-elem-text(data-rent="100")
+                    | Интернет до #[span 100 Мбит/сек]
+                li.cube-tariff__item-elem
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
+                  .cube-tariff__item-elem-text
+                    | Интернет до #[span 100 Мбит/сек]
+                li.cube-tariff__item-elem
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
+                  .cube-tariff__item-elem-text
+                    | Интернет до #[span 100 Мбит/сек]
+              .cube-tariff__item-price
+                .cube-tariff__item-price-box
+                  .cube-tariff__item-price-elem #[span 275] ₽/мес
+              a.cube-tariff__item-button.button-2(href="#") Подключить
+              a.cube-tariff__item-link(href="#") Подробнее о тарифе
+        .swiper-navigation
+          button.swiper-navigation__prev
+            img.swiper-navigation__img(src="assets/images/cube-tariffs/slider-btn.svg" alt="")
+          button.swiper-navigation__next
+            img.swiper-navigation__img(src="assets/images/cube-tariffs/slider-btn.svg" alt="")
+      a.cube-tariff__button.button-2 Посмотреть все тарифы
+
