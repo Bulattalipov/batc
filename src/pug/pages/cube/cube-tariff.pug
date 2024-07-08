@@ -1,69 +1,186 @@
-section.cube-tariff
+section.cube-tariff(id="tariffs")
   .site-container-2
     .cube-tariff__wrapper
       h2.cube-tariff__title.title-2 Тарифы
       ul.cube-tariff__items.cube-tariff__swiper
         .swiper-wrapper
-          each i in Array.from(Array(2).keys())
-            li.swiper-slide.cube-tariff__item.cube-tariff__item--colm-2
-              .cube-tariff__item-title Летай. Оранжевый. Профит
-              .cube-tariff__item-desc Интернет + ТВ
-              ul.cube-tariff__item-list
+          li.swiper-slide.cube-tariff__item.cube-tariff__item--colm-2
+            .cube-tariff__item-title Летай. Оранжевый. Профит
+            .cube-tariff__item-desc Интернет + ТВ
+            ul.cube-tariff__item-list
+              li.cube-tariff__item-elem
+                img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
+                .cube-tariff__item-elem-text
+                  | Интернет до #[span 100 Мбит/сек]
+              li.cube-tariff__item-elem
+                label.switcher
+                  input(class="visually-hidden" type="checkbox" name="swicher")
+                  .switcher__container
+                    span.switcher__control
+                .cube-tariff__item-elem-text(data-price="275")
+                  | Аренда роутера #[span 100 ₽/мес]
+              li.cube-tariff__item-elem
+                img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/tw.svg" alt="")
+                .cube-tariff__item-elem-text
+                  | Телевидение #[span до 230 каналов]
+              li.cube-tariff__item-elem
+                img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/cube.svg" alt="")
+                .cube-tariff__item-elem-text
+                  | Покупка роутера #[span 2700₽]
+            .cube-tariff__item-price
+              .cube-tariff__item-price-discount скидка на 3 месяца
+              .cube-tariff__item-price-box
+                .cube-tariff__item-price-elem #[span 275] ₽/мес
+                .cube-tariff__item-price-crossed #[span 550] ₽/мес
+            a.cube-tariff__item-button.button-2(href="#") Подключить
+            a.cube-tariff__item-link(href="/internet/rates/domashniy-internet-tv/letay-oranzhevyy-profit-/") Подробнее о тарифе
+          li.swiper-slide.cube-tariff__item.cube-tariff__item--colm-2
+            .cube-tariff__item-title Летай. Всё и сразу
+            .cube-tariff__item-desc Интернет + ТВ + Мобильная связь
+            ul.cube-tariff__item-list
+              li.cube-tariff__item-elem
+                img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
+                .cube-tariff__item-elem-text
+                  | Интернет до #[span 100 Мбит/сек]
+              li.cube-tariff__item-elem
+                img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/unlimited.svg" alt="")
+                .cube-tariff__item-elem-text
+                  | Моб. интернет #[span безлимит]
+              li.cube-tariff__item-elem
+                img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/tw.svg" alt="")
+                .cube-tariff__item-elem-text
+                  | Телевидение #[span до 230 каналов]
+              li.cube-tariff__item-elem
+                img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/call.svg" alt="")
+                .cube-tariff__item-elem-text
+                  | Звонки по РТ и РФ #[span 1000мин.]
+              li.cube-tariff__item-elem
+                label.switcher
+                  input(class="visually-hidden" type="checkbox" name="swicher")
+                  .switcher__container
+                    span.switcher__control
+                .cube-tariff__item-elem-text(data-price="295")
+                  | Аренда роутера #[span 100 ₽/мес]
+              li.cube-tariff__item-elem
+                img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/sms.svg" alt="")
+                .cube-tariff__item-elem-text
+                  | 100 SMS/мес.
+              li.cube-tariff__item-elem
+                img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/cube.svg" alt="")
+                .cube-tariff__item-elem-text
+                  | Покупка роутера #[span 2700₽]
+            .cube-tariff__item-price
+              .cube-tariff__item-price-discount скидка на 3 месяца
+              .cube-tariff__item-price-box
+                .cube-tariff__item-price-elem #[span 295] ₽/мес
+                .cube-tariff__item-price-crossed #[span 590] ₽/мес
+            a.cube-tariff__item-button.button-2(href="#") Подключить
+            a.cube-tariff__item-link(href="/internet/rates/domashniy-internet-tv-mobilnaya-svyaz/letay-vse-i-srazu/") Подробнее о тарифе
+
+            li.swiper-slide.cube-tariff__item
+              .cube-tariff__item-title Летай. Оранжевый 250
+              .cube-tariff__item-desc Интернет
+              ul.cube-tariff__item-list.cube-tariff__item-list--colm-1
                 li.cube-tariff__item-elem
                   img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
                   .cube-tariff__item-elem-text
-                    | Интернет до #[span 100 Мбит/сек]
+                    | Интернет до #[span 250 Мбит/сек]
                 li.cube-tariff__item-elem
                   label.switcher
                     input(class="visually-hidden" type="checkbox" name="swicher")
                     .switcher__container
                       span.switcher__control
-                  .cube-tariff__item-elem-text(data-rent="100")
-                    | Интернет до #[span 100 Мбит/сек]
+                  .cube-tariff__item-elem-text(data-price="500")
+                    | Аренда роутера #[span 100 ₽/мес]
                 li.cube-tariff__item-elem
-                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/cube.svg" alt="")
                   .cube-tariff__item-elem-text
-                    | Интернет до #[span 100 Мбит/сек]
-                li.cube-tariff__item-elem
-                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
-                  .cube-tariff__item-elem-text
-                    | Интернет до #[span 100 Мбит/сек]
+                    | Покупка роутера #[span 2700₽]
               .cube-tariff__item-price
-                .cube-tariff__item-price-discount скидка на 3 месяца
                 .cube-tariff__item-price-box
-                  .cube-tariff__item-price-elem #[span 275] ₽/мес
-                  .cube-tariff__item-price-crossed #[span 550] ₽/мес
+                  .cube-tariff__item-price-elem #[span 500] ₽/мес
               a.cube-tariff__item-button.button-2(href="#") Подключить
-              a.cube-tariff__item-link(href="#") Подробнее о тарифе
-          each i in Array.from(Array(4).keys())
+              a.cube-tariff__item-link(href="/internet/rates/tarify-500-mbit/letay-oranzhevyy-250/") Подробнее о тарифе
             li.swiper-slide.cube-tariff__item
-              .cube-tariff__item-title Летай. Оранжевый. Профит
+              .cube-tariff__item-title Летай. Оранжевый 500
+              .cube-tariff__item-desc Интернет
+              ul.cube-tariff__item-list.cube-tariff__item-list--colm-1
+                li.cube-tariff__item-elem
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
+                  .cube-tariff__item-elem-text
+                    | Интернет до #[span 500 Мбит/сек]
+                li.cube-tariff__item-elem
+                  label.switcher
+                    input(class="visually-hidden" type="checkbox" name="swicher")
+                    .switcher__container
+                      span.switcher__control
+                  .cube-tariff__item-elem-text(data-price="650")
+                    | Аренда роутера #[span 100 ₽/мес]
+                li.cube-tariff__item-elem
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/cube.svg" alt="")
+                  .cube-tariff__item-elem-text
+                    | Покупка роутера #[span 2700₽]
+              .cube-tariff__item-price
+                .cube-tariff__item-price-box
+                  .cube-tariff__item-price-elem #[span 650] ₽/мес
+              a.cube-tariff__item-button.button-2(href="#") Подключить
+              a.cube-tariff__item-link(href="/internet/rates/tarify-500-mbit/letay-oranzhevyy-500/") Подробнее о тарифе
+            li.swiper-slide.cube-tariff__item
+              .cube-tariff__item-title Летай. Оранжевый 250+ТВ
               .cube-tariff__item-desc Интернет + ТВ
               ul.cube-tariff__item-list.cube-tariff__item-list--colm-1
                 li.cube-tariff__item-elem
                   img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
                   .cube-tariff__item-elem-text
-                    | Интернет до #[span 100 Мбит/сек]
+                    | Интернет до #[span 250 Мбит/сек]
+                li.cube-tariff__item-elem
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/tw.svg" alt="")
+                  .cube-tariff__item-elem-text
+                    | Телевидение #[span до 230 каналов]
                 li.cube-tariff__item-elem
                   label.switcher
                     input(class="visually-hidden" type="checkbox" name="swicher")
                     .switcher__container
                       span.switcher__control
-                  .cube-tariff__item-elem-text(data-rent="100")
-                    | Интернет до #[span 100 Мбит/сек]
+                  .cube-tariff__item-elem-text(data-price="600")
+                    | Аренда роутера #[span 100 ₽/мес]
                 li.cube-tariff__item-elem
-                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/cube.svg" alt="")
                   .cube-tariff__item-elem-text
-                    | Интернет до #[span 100 Мбит/сек]
-                li.cube-tariff__item-elem
-                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
-                  .cube-tariff__item-elem-text
-                    | Интернет до #[span 100 Мбит/сек]
+                    | Покупка роутера #[span 2700₽]
               .cube-tariff__item-price
                 .cube-tariff__item-price-box
-                  .cube-tariff__item-price-elem #[span 275] ₽/мес
+                  .cube-tariff__item-price-elem #[span 600] ₽/мес
               a.cube-tariff__item-button.button-2(href="#") Подключить
-              a.cube-tariff__item-link(href="#") Подробнее о тарифе
+              a.cube-tariff__item-link(href="/internet/rates/tarify-500-mbit/letay-oranzhevyy-250-tv/") Подробнее о тарифе
+            li.swiper-slide.cube-tariff__item
+              .cube-tariff__item-title Летай. Оранжевый 500+ТВ
+              .cube-tariff__item-desc Интернет + ТВ
+              ul.cube-tariff__item-list.cube-tariff__item-list--colm-1
+                li.cube-tariff__item-elem
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/wifi.svg" alt="")
+                  .cube-tariff__item-elem-text
+                    | Интернет до #[span 500 Мбит/сек]
+                li.cube-tariff__item-elem
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/tw.svg" alt="")
+                  .cube-tariff__item-elem-text
+                    | Телевидение #[span до 230 каналов]
+                li.cube-tariff__item-elem
+                  label.switcher
+                    input(class="visually-hidden" type="checkbox" name="swicher")
+                    .switcher__container
+                      span.switcher__control
+                  .cube-tariff__item-elem-text(data-price="800")
+                    | Аренда роутера #[span 100 ₽/мес]
+                li.cube-tariff__item-elem
+                  img.cube-tariff__item-elem-icon(src="assets/images/cube-tariffs/cube.svg" alt="")
+                  .cube-tariff__item-elem-text
+                    | Покупка роутера #[span 2700₽]
+              .cube-tariff__item-price
+                .cube-tariff__item-price-box
+                  .cube-tariff__item-price-elem #[span 800] ₽/мес
+              a.cube-tariff__item-button.button-2(href="#") Подключить
+              a.cube-tariff__item-link(href="/internet/rates/tarify-500-mbit/letay-oranzhevyy-500-tv/") Подробнее о тарифе
         .swiper-navigation
           button.swiper-navigation__prev
             img.swiper-navigation__img(src="assets/images/cube-tariffs/slider-btn.svg" alt="")

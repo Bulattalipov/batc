@@ -1,8 +1,9 @@
 .intro {
   position: relative;
   z-index: 1;
-  height: 100vh;
-  min-height: 70rem;
+  height: 88vh;
+  /*min-height: 70rem;*/
+  /*margin-top: 4.6rem;*/
   margin-top: var(--header-height);
   padding-top: 7rem;
   padding-bottom: 4.8rem;
@@ -40,7 +41,7 @@
       width: 100%;
       height: 100%;
       opacity: 0.21;
-      background-color: var(--color-orange);
+      /*background-color: var(--color-orange);*/
       content: '';
     }
   }
@@ -48,7 +49,7 @@
   &__swiper-img {
     height: 100%;
     object-fit: cover;
-
+    /*object-fit: contain;*/
   }
 
   &__inner {
@@ -70,7 +71,7 @@
     max-width: 89rem;
     margin-bottom: 3.2rem;
     font-weight: 700;
-    font-size: 8rem;
+    font-size: 7rem;
     line-height: 1;
 
     @include mq(custom, min, 1440) {
@@ -91,19 +92,19 @@
     }
 
     @include mq(xs) {
-      margin-bottom: 4.1rem;
-      font-size: 3.2rem;
+      margin-bottom: 3.6rem;
+      font-size: 2.4rem;
     }
   }
 
   &__desc {
-    max-width: 67rem;
+    max-width: 53rem;
     margin-bottom: 6.4rem;
     font-weight: 500;
     font-size: 3.5rem;
 
     @include mq(md) {
-      max-width: 67rem;
+      max-width: 63rem;
       margin-bottom: 7.5rem;
       text-align: center;
     }
@@ -113,7 +114,7 @@
     }
 
     @include mq(xs) {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
   }
 
@@ -138,7 +139,7 @@
 
       @include mq(sm) {
         margin-right: 0;
-        margin-bottom: 2.3rem;
+        margin-bottom: 1.8rem;
       }
     }
   }

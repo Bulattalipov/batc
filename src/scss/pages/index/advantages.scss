@@ -79,7 +79,7 @@
     margin-right: 7rem;
 
     @include mq(custom, min, 1440) {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
 
     @include mq(custom, max, 1400) {
@@ -134,7 +134,7 @@
     }
 
     @include mq(custom, min, 1440) {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     @include mq(custom, max, 1400) {

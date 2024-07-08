@@ -3,7 +3,7 @@ export default () => {
 
   document.querySelectorAll('a.nav__list-link').forEach(link => {
     link.addEventListener('click', function (e) {
-      e.preventDefault();
+
 
       if (this.closest(".main-menu")) {
         this.closest(".main-menu").classList.remove('active');
@@ -17,15 +17,19 @@ export default () => {
 
       const scrollTarget = document.getElementById(href);
 
-      const topOffset = -10;
-      const elementPosition = scrollTarget.getBoundingClientRect().top;
-      const offsetPosition = elementPosition - topOffset;
+      if (scrollTarget != null)
+      {
+        e.preventDefault();
 
-      window.scrollBy({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
+        const topOffset = -10;
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - topOffset;
 
+        window.scrollBy({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
     });
   })
 }

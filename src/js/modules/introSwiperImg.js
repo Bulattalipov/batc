@@ -9,17 +9,16 @@ export default function () {
     return;
   }
 
-  const sliders = document.querySelectorAll('.intro__swiper');
+  /*const sliders = document.querySelectorAll('.intro__swiper');
 
   sliders.forEach(slider => {
 
     new Swiper(slider, {
       loop: true,
       speed: 500,
-      autoplay: true,
-      speed: 500,
+      autoplay: false,
       slidesPerView: 1,
       spaceBetween: 0,
     });
-  });
+  });*/
 }

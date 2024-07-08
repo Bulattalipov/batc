@@ -15,7 +15,7 @@
     font-size: 3.5rem;
 
     @include mq(custom, min, 1440) {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     @include mq(md) {
@@ -44,7 +44,7 @@
   &__title {
     margin-bottom: 2rem;
     font-weight: 500;
-    font-size: 5rem;
+    font-size: 4rem;
 
     @include mq(md) {
       font-size: 4rem;
@@ -220,8 +220,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1.1rem;
-    padding: 1.6rem 3.1rem 1.6rem 1.4rem;
+    margin-bottom: 0.9rem;
+    padding: 1.2rem 3.1rem 1.2rem 1.4rem;
     background: #FFFDFD;
     border-radius: 1.7rem;
 
@@ -250,7 +250,7 @@
 
   &__item-title {
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2rem;
     text-decoration-line: underline;
     cursor: pointer;
 
@@ -268,7 +268,7 @@
     margin-left: auto;
     padding-left: 0.7rem;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2rem;
 
     @include mq(sm) {
       font-size: 2.5rem;
@@ -417,10 +417,10 @@
     display: flex;
     justify-content: space-between;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2rem;
 
     &:last-child {
-      margin-top: 2.4rem;
+      margin-top: 1.8rem;
     }
 
     @include mq(sm) {

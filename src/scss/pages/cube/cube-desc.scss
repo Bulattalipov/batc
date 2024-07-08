@@ -16,6 +16,11 @@
     @include mq(xs) {
       font-size: 4rem;
     }
+
+    sup{
+      vertical-align: super;
+      font-size: smaller;
+    }
   }
 
   &__inner {

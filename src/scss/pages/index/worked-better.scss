@@ -1,5 +1,5 @@
 .worked-better {
-  padding: 8.6rem 0 4.7rem;
+  padding: 6rem 0 4.7rem;
   background-color: var(--color-orange);
 
   @include mq(sm) {
@@ -7,14 +7,14 @@
   }
 
   &__title {
-    margin-bottom: 7.5rem;
+    /*margin-bottom: 4.5rem;*/
     color: var(--color-white);
     font-weight: 700;
-    font-size: 8rem;
+    font-size: 6rem;
     text-align: center;
 
     @include mq(custom, min, 1440) {
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     @include mq(md) {
@@ -59,7 +59,7 @@
   &__swaper-item-img {
     width: 75.5rem;
     height: 48.5rem;
-    object-fit: cover;
+    object-fit: contain;
 
     @include mq(md) {
       width: 100%;
@@ -76,18 +76,18 @@
   }
 
   &__swaper-item-text {
-    margin-top: 10.7rem;
+    margin-top: 6rem;
     color: var(--color-white);
     font-weight: 500;
     font-size: 3.5rem;
     text-align: center;
 
     @include mq(custom, min, 1440) {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     @include mq(sm) {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
 
@@ -108,6 +108,7 @@
     }
 
     @include mq(custom, max, 540) {
+      display: none;
       top: 27rem;
     }
   }
@@ -142,8 +143,8 @@
 
   .swiper-pagination-bullet {
     display: block;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background-color: #FFB990;
     border-radius: 50%;
     margin-right: 2rem !important;
@@ -165,7 +166,7 @@
 
   .swiper-horizontal>.swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    top: 54rem;
+    top: 50rem;
     bottom: inherit;
 
     @include mq(md) {
@@ -181,7 +182,7 @@
     }
 
     @include mq(custom, max, 540) {
-      top: 30rem;
+      top: 26rem;
     }
   }
 }

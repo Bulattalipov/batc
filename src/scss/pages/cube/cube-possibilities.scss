@@ -45,8 +45,8 @@
         left: 108%;
         top: 1.3rem;
         background-image: url('../images/cube-possibilities/line-2.svg');
-        width: 47.3rem;
-        height: 1rem;
+        width: 56.3rem;
+        height: 9rem;
       }
     }
 
@@ -57,8 +57,44 @@
         left: 108%;
         bottom: 1rem;
         background-image: url('../images/cube-possibilities/line-3.svg');
-        width: 36.8rem;
-        height: 10.9rem;
+        width: 56.3rem;
+        height: 1rem;
+      }
+    }
+
+    &:nth-child(4) {
+      .cube-possibilities__item-title::before {
+        content: '';
+        position: absolute;
+        left: 108%;
+        bottom: 1rem;
+        background-image: url('../images/cube-possibilities/line-4.svg');
+        width: 37.8rem;
+        height: 13.9rem;
+      }
+    }
+
+    &:nth-child(5) {
+      .cube-possibilities__item-title::before {
+        content: '';
+        position: absolute;
+        left: 108%;
+        bottom: 1rem;
+        background-image: url('../images/cube-possibilities/line-5.svg');
+        width: 47.8rem;
+        height: 1rem;
+      }
+    }
+
+    &:nth-child(6) {
+      .cube-possibilities__item-title::before {
+        content: '';
+        position: absolute;
+        left: 108%;
+        bottom: 1rem;
+        background-image: url('../images/cube-possibilities/line-6.svg');
+        width: 40.8rem;
+        height: 29.9rem;
       }
     }
   }
@@ -160,7 +196,7 @@
     z-index: 5;
     width: 60rem;
     height: 62.8rem;
-    margin-top: -18rem;
+    margin-top: -6rem;
     margin-left: 9rem;
 
     @include mq(custom, max, 1440) {

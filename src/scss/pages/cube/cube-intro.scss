@@ -154,6 +154,12 @@
     }
   }
 
+  &__upper-text{
+    text-transform: uppercase;
+    display: block;
+    font-size: 8rem;
+  }
+
   &__desc {
     height: 13rem;
 

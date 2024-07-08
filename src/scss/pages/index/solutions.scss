@@ -142,10 +142,10 @@
   &__list-item-desc {
     margin-bottom: 1.5rem;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2rem;
 
     @include mq(custom, min, 1440) {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     @include mq(custom, max, 1278) {
@@ -171,8 +171,8 @@
 
   &__list-item-icon {
     align-self: flex-end;
-    width: 9rem;
-    height: 9rem;
+    width: 5rem;
+    height: 5rem;
     margin-top: auto;
 
     @include mq(md) {
