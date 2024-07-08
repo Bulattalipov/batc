@@ -157,6 +157,11 @@ button {
     background-color: #fff;
     color: #fe5000;
     box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.25);
+
+    @include mq(sm) {
+      padding: 2rem 7rem;
+      font-size: 2.3rem;
+    }
   }
 }
 

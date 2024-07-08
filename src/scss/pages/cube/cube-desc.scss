@@ -11,10 +11,12 @@
 
     @include mq(sm) {
       font-size: 4.5rem;
+      line-height: normal;
+      text-align: center
     }
 
     @include mq(xs) {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
 
     sup{
@@ -96,6 +98,7 @@
     @include mq(md) {
       max-width: 100%;
       margin-bottom: 10rem;
+      font-size: 2rem;
     }
   }
 }

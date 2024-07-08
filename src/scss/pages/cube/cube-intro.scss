@@ -158,6 +158,10 @@
     text-transform: uppercase;
     display: block;
     font-size: 8rem;
+
+    @include mq(md) {
+      font-size: 6rem;
+    }
   }
 
   &__desc {

@@ -6,6 +6,10 @@ export default () => {
     typeSpeed: 30, // Скорость печати
     startDelay: 500, // Задержка перед стартом анимации
     backSpeed: 30, // Скорость удаления
+
+    fadeOut: true,
+    showCursor: false,
+
     loop: true // Указываем, повторять ли анимацию
   });
 }
