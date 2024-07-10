@@ -7,6 +7,10 @@
   // background-repeat: no-repeat;
   // background-size: cover;
 
+  @include mq(md) {
+    padding-bottom: 15rem;
+  }
+
   &__bg-img {
     position: absolute;
     z-index: 1;

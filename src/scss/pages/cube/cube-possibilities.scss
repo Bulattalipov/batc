@@ -3,8 +3,16 @@
   margin-top: -0.1rem;
   background: linear-gradient(180deg, #fff 0%, #acdbf6 0%);
 
+  @include mq(md) {
+    padding-top: 0;
+  }
+
   &__title {
     margin-bottom: 11rem;
+
+    @include mq(md) {
+      margin-bottom: 3.5rem;
+    }
   }
 
   &__inner {

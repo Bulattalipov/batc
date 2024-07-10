@@ -252,6 +252,9 @@ img {
   .main-menu {
     .header__call {
       margin-top: 3rem;
+      @include mq(md) {
+        display: inline-block;
+      }
     }
   }
 
