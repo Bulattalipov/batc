@@ -92,14 +92,12 @@
     font-weight: 500;
     font-size: 3.2rem;
     line-height: 100%;
-    text-align: justify;
     color: #000;
 
     @include mq(md) {
       max-width: 100%;
       margin-bottom: 10rem;
       font-size: 2rem;
-      text-align: left;
     }
   }
 }

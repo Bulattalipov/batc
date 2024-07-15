@@ -440,9 +440,12 @@ export default function validation() {
               window.batc_API.modal.onOpen("modal-success");
 
               $(form).trigger("reset");
+              onloadCallbackRecap();
             }
           })
           .catch((error) => {
+            document.querySelector('[data-target=modal-error] .modal__title').textContent = error.response.data + '<br>Попробуйте обновить страницу и отправить заявку снова.';
+
             window.batc_API.modal.close();
             window.batc_API.modal.onOpen("modal-error");
           });
