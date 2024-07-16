@@ -46,7 +46,7 @@ export function calculation() {
   let summdparseInt = 990;
 
   if (parseInt(rangeSingle.dataset.min) !== parseInt(rangeInput.value.replace(/\s+/g, ''))) {
-    summdparseInt = parseInt(priceMoreEmployee) * numberAdditionalEmployees;
+    summdparseInt += parseInt(priceMoreEmployee) * numberAdditionalEmployees;
 
     itemSummaMoreEmployee.textContent = summdparseInt + ' ₽';
   } else {
