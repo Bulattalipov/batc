@@ -16,7 +16,8 @@
     }
 
     @include mq(xs) {
-      font-size: 3.5rem;
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
     }
 
     sup{
@@ -96,8 +97,9 @@
 
     @include mq(md) {
       max-width: 100%;
-      margin-bottom: 10rem;
-      font-size: 2rem;
+      margin-bottom: 6rem;
+      font-size: 1.8rem;
+      font-weight: normal;
     }
   }
 }

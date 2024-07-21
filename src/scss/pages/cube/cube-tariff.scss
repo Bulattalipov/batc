@@ -13,6 +13,9 @@
 
   &__title {
     margin-bottom: 4.1rem;
+    @include mq(md) {
+      text-align: center;
+    }
   }
 
   &__items {
@@ -54,9 +57,9 @@
       }
     }
 
-    /*.swiper-slide {
+    .swiper-slide {
       height: auto;
-    }*/
+    }
   }
   .cube-tariff-navigation.swiper-navigation {
     position: absolute;
@@ -101,7 +104,7 @@
     }
 
     @include mq(custom, max, 1023) {
-      padding: 2.5rem 2.2rem 1.5rem;
+      padding: 1.8rem 1.5rem 1.5rem;
     }
 
     input:checked~.switcher__container .switcher__control::before {
@@ -126,11 +129,16 @@
 
   &__item-title {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 130%;
     text-align: center;
     color: #fe5000;
     margin-bottom: 0.8rem;
+
+    @include mq(md) {
+      margin-bottom: 0;
+      text-align: left;
+    }
   }
 
   &__item-desc {
@@ -140,6 +148,10 @@
     text-align: center;
     color: #000;
     margin-bottom: 2.5rem;
+
+    @include mq(md) {
+      text-align: left;
+    }
   }
 
   &__item-list {
@@ -154,6 +166,7 @@
 
     @include mq(sm) {
       grid-template-columns: repeat(1, 1fr);
+      gap: 1rem 3.5rem;
     }
   }
 
@@ -174,6 +187,10 @@
     color: #000;
     word-break: break-all;
 
+    @include mq(sm) {
+      font-size: 1.7rem;
+    }
+
     span {
       display: block;
       font-weight: 300;
@@ -184,6 +201,9 @@
     align-self: center;
     margin-bottom: 1rem;
     margin-top: auto;
+    @include mq(custom, max, 1023) {
+      margin-top: 0;
+    }
   }
 
   &__item-link {
@@ -202,6 +222,7 @@
 
     @include mq(custom, max, 1023) {
       margin-right: 0;
+      margin-top: auto;
     }
 
     .services-box__item-tooltip{
@@ -236,6 +257,10 @@
     line-height: 110%;
     color: #000;
 
+    @include mq(sm) {
+      font-size: 1.6rem;
+    }
+
     span {
       font-size: 3.6rem;
     }
@@ -263,5 +288,9 @@
   &__button {
     display: inline-block;
     margin: 8rem auto 0;
+
+    @include mq(sm) {
+      margin: 2rem auto 0;
+    }
   }
 }

@@ -3,6 +3,10 @@
   margin-top: -0.1rem;
   background: linear-gradient(180deg, #fe5000 0%, #fff 78.96%);
 
+  @include mq(sm) {
+    padding-top: 0;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 4.8rem;

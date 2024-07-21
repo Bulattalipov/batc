@@ -3,6 +3,11 @@
   background: linear-gradient(180deg, #acdbf6 0%, #fff 100%);
   margin-top: -0.1rem;
 
+  @include mq(md) {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;

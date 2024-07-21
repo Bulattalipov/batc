@@ -11,7 +11,8 @@
     margin-bottom: 11rem;
 
     @include mq(md) {
-      margin-bottom: 3.5rem;
+      margin-bottom: 3rem;
+      text-align: center;
     }
   }
 
@@ -32,6 +33,9 @@
   &__item {
     &:not(:last-child) {
       margin-bottom: 5.3rem;
+      @include mq(md) {
+        margin-bottom: 1.3rem;
+      }
     }
 
     &:nth-child(1) {
@@ -116,6 +120,10 @@
     color: #fe5000;
     margin-bottom: 0.5rem;
 
+    @include mq(md) {
+      font-size: 2.2rem;
+    }
+
     &::before {
       background-size: cover;
 
@@ -128,6 +136,10 @@
   &__item-text {
     font-size: 2rem;
     color: #000;
+
+    @include mq(md) {
+      font-size: 1.6rem;
+    }
   }
 
   &__box {

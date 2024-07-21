@@ -17,7 +17,7 @@
   }
 
   @include mq(sm) {
-    padding-top: 15rem;
+    padding-top: 10rem;
   }
 
   &__inner {
@@ -54,7 +54,7 @@
       }
 
       @include mq(custom, max, 520) {
-        top: 47rem;
+        top: 25rem;
       }
     }
   }
@@ -89,8 +89,11 @@
       }
 
       @include mq(custom, max, 520) {
-        width: 40rem;
-        height: 40rem;
+        width: 25rem;
+        height: 25rem;
+        transform: rotate(-20deg);
+        top: 19rem;
+        left: -25%;
       }
     }
 
@@ -126,7 +129,9 @@
     }
 
     @include mq(sm) {
-      height: 19rem;
+      height: 10rem;
+      margin-bottom: 0;
+      margin-top: 2rem;
     }
   }
 
@@ -150,7 +155,7 @@
     }
 
     @include mq(xs) {
-      matgin: 4rem 0;
+      margin: 4rem 0 0 ;
     }
   }
 
@@ -202,9 +207,13 @@
       }
 
       @include mq(custom, max, 1023) {
-        top: -1rem;
+        /*top: -1rem;
         width: 25.5rem;
-        height: 25.5rem;
+        height: 25.5rem;*/
+        left: 73%;
+        top: -1rem;
+        width: 12.5rem;
+        height: 12.5rem;
         transform: translateX(-35%) rotate(20deg);
       }
     }
@@ -216,13 +225,14 @@
     object-fit: contain;
 
     @include mq(md) {
-      width: 60rem;
+      width: 30rem;
       height: 48rem;
     }
 
     @include mq(xs) {
-      margin-right: 1rem;
-      margin-left: 1rem;
+      margin-left: 16rem;
+      margin-top: 2rem;
+      width: 26rem;
       height: 100%;
     }
   }
