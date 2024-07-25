@@ -200,6 +200,7 @@
       top: -11rem;
       left: 10rem;
       background-size: cover;
+      transform: translateX(0) rotate(20deg);
 
       @include mq(custom, max, 1440) {
         left: 50%;
