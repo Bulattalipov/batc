@@ -15,7 +15,7 @@ export default () => {
 
     checkbox.addEventListener('input', () => {
       if (checkbox.checked) {
-        total.innerHTML = parseInt(basePrice) + 120;
+        total.innerHTML = parseInt(basePrice) + 150;
         /*if (item.classList.contains('cube-tariff__item--colm-2')) {
           item.querySelector('.cube-tariff__item-price-crossed').style.display = 'none';
         }*/
